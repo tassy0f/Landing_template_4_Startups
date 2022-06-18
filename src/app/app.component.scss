@@ -218,44 +218,203 @@ hr {
         background: rgba(0, 89, 247, 1);
         border-radius: 24px;
         text-align: center;
+    }
+}
 
-        .question {
+.question {
+    @include fontFamily('Sora', normal, 500, 20px, 32px);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding-top: 72px;
+    color: #fff;
+}
+
+.promo__text {
+    @include fontFamily('Sora', normal, 600, 36px, 40px);
+    padding-top: 16px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.get_started {
+    margin-top: 32px;
+    width: 178px;
+    height: 64px;
+    background: #689EFF;
+    border-radius: 8px;
+    border: none;
+
+    @include fontFamily('Sora', normal, 500, 16px, 24px);
+    color: #fff;
+
+    .arrow {
+        display: flex;
+        margin-left: 34px;
+    }
+
+    &:active {
+        background: #9dbffd
+    }
+}
+
+.site__author {
+    margin-top: 148px;
+    @include fontFamily('Sora', normal, 500, 20px, 32px);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #7E8BB6;
+}
+
+//**********************************************************  SECTION HOW IT WORKS PAGE  **************************************************************
+
+.how_it_works {
+    margin-top: 8px;
+
+    .wrap {
+        margin-top: 96px;
+        width: 1300px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .how_it_works__panel {
+        width: 500px;
+        height: 360px;
+    }
+
+    .how_it_title__name {
+        @include fontFamily('Sora', normal, 600, 36px, 40px);
+        letter-spacing: -0.03em;
+        color: #273464;
+        margin-top: 90px;
+    }
+
+    .how_it_title__description {
+        width: 400px;
+        @include fontFamily('Sora', normal, 400, 20px, 32px);
+        letter-spacing: -0.02em;
+        color: rgba(126, 139, 182, 1);
+        margin-top: 28px;
+    }
+}
+
+.how__title {
+    @include fontFamily('Sora', normal, 600, 48px, 64px);
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #273464;
+}
+
+//**********************************************************  SECTION PRICING PAGE  **************************************************************
+
+.price__section {
+    margin-top: 8px;
+
+    .price__cart {
+        margin-top: 176px;
+        width: 400px;
+        height: 630px;
+        background: #081131;
+        box-shadow: 0px 35px 45px rgba(7, 14, 39, 0.05);
+        border-radius: 16px;
+
+        &:hover {
+            margin-top: 76px;
+            background: #162044;
+
+            .get_started {
+                background: #0059F7;
+            }
+        }
+
+        .price__rate {
+            margin-top: 48px;
+            margin-left: 50px;
             @include fontFamily('Sora', normal, 500, 20px, 32px);
             letter-spacing: 0.02em;
             text-transform: uppercase;
+            color: #7E8BB6;
+        }
+
+        .price {
+            margin-top: 12px;
+            margin-left: 50px;
+            @include fontFamily('Sora', normal, 600, 54px, 64px);
+            letter-spacing: -0.04em;
+            color: #4E5A85;
+
+            span {
+                color: #fff;
+            }
+        }
+
+        hr {
+            margin-top: 48px;
+            width: 304px;
+            background: #081131;
+            opacity: 0.16;
+            border-radius: 16px;
+        }
+
+        .features__list {
+            margin-top: 48px;
+            list-style: none;
+
+            li {
+                margin-left: 50px;
+                margin-bottom: 24px;
+                @include fontFamily('Sora', normal, 400, 16px, 24px);
+                letter-spacing: -0.01em;
+                color: #CCD2E9;
+                padding-left: 36px;
+                background: url(../assets/checkbox.svg) no-repeat;
+            }
+        }
+
+        .get_started {
+            margin-left: 50px;
+            background: #4E5A85;
+        }
+    }
+}
+
+//*************************************************************  SECTION PROMO PAGE  ******************************************************************
+
+.promo {
+    margin-top: 172px;
+    margin-bottom: 132px;
+    
+    .block {
+        width: 1060px;
+        height: 176px;
+        background: #0059F7;
+        border-radius: 24px;
+        display: flex;
+        justify-content: space-around;
+
+        .question {
+            @include fontFamily('Sora', normal, 500, 14px, 16px);
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
             opacity: 0.5;
-            padding-top: 72px;
+            padding-top: 50px;
             color: #fff;
+            margin-left: -80px;
         }
 
         .promo__text {
-            @include fontFamily('Sora', normal, 600, 36px, 40px);
-            padding-top: 16px;
-            letter-spacing: -0.03em;
-            color: #fff;
+            margin-left: -80px;
         }
 
-        button {
-            margin-top: 32px;
-            width: 178px;
-            height: 64px;
-            background: #689EFF;
-            border-radius: 8px;
-            border: none;
-
-            @include fontFamily('Sora', normal, 500, 16px, 24px);
-            color: #fff;
-
-            .arrow {
-                display: flex;
-                margin-left: 34px;
-            }
-
-            &:active {
-                background: #9dbffd
-            }
+        .get_started {
+            margin-top: 57px;
+            margin-right: -80px;
         }
     }
+
+
 }
 
 //*********************************************************************  FOOTER  **********************************************************************
