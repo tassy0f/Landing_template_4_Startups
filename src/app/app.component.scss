@@ -1,0 +1,295 @@
+@mixin fontFamily($family, $style, $weight, $size, $height) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+.wrap {
+    max-width: 1340px;
+    max-height: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+//*********************************************************************  HEADER  **********************************************************************
+
+header {
+    width: 100%;
+    height: 104px;
+
+    hr {
+        width: 100%;
+        border: 1px solid rgba(78, 90, 133, 1);
+        opacity: 0.1;
+    }
+    
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        
+    } 
+
+    .header__logo {
+        display: flex;
+        padding-top: 35px;
+        padding-bottom: 40px;
+
+        p {
+            @include fontFamily('Sora', normal, 600, 24px, 32px);
+            letter-spacing: -0.02em;
+            color: rgba(8, 17, 49, 1);
+            margin-left: 15px;
+        }
+    }
+
+    button {
+        width: 94px;
+        height: 56px;
+        background: rgba(152, 166, 199, 1);
+        border-radius: 8px;
+        align-items: center;
+        border:none;
+
+        margin-top: 24px;
+        margin-bottom: 24px;
+
+        color: rgba(255, 255, 255, 1);
+        @include fontFamily('Sora', normal, 500, 16px, 24px);
+
+        &:active {
+            background: rgba(0, 89, 247, 1);
+        }
+    }
+}
+
+//*********************************************************************  MAIN  **********************************************************************
+
+// main {
+//     width: 100%;
+//     height: 1244px;
+// }
+
+//*********************************************************************  SECTION START PAGE  **********************************************************
+
+.start__page {
+    width: 100%;
+    height: 1244px;
+
+    .start__text {
+        @include fontFamily('Sora', normal, 700, 64px, 80px);
+        letter-spacing: -0.03em;
+        color: rgba(22, 32, 68, 1);
+        margin-top: 64px;
+    }
+
+    .start__description {
+        width: 400px;
+        @include fontFamily('Sora', normal, 400, 20px, 32px);
+        letter-spacing: -0.02em;
+        color: rgba(126, 139, 182, 1);
+        margin-top: 92px;
+
+        button {
+            width: 188px;
+            height: 56px;
+            background: rgba(0, 89, 247, 1);
+            border-radius: 8px;
+            align-items: center;
+            border:none;
+
+            margin-top: 32px;
+
+            color: rgba(255, 255, 255, 1);
+            @include fontFamily('Sora', normal, 500, 16px, 24px);
+
+            &:active {
+                background: rgb(66, 133, 250);
+            }
+        }
+    }
+
+    .start__dashboard {
+        margin-top: 100px;
+        position: relative;
+
+        .start__loader {
+            position: absolute;
+            left: -10%;
+            top: 30%;
+        }
+
+        .dashboard__message {
+            position: absolute;
+            left: 30%;
+            top: 44%;
+        }
+    }
+
+    .companies__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 1000px;
+        margin-top: 94px;
+    }
+}
+
+hr {
+    margin-top: 94px;
+    width: 1060px;
+    margin: 0 auto;
+    border: 1px solid rgba(78, 90, 133, 1);
+    opacity: 0.1;
+}
+
+//**************************************************************  SECTION FEATURES PAGE  **************************************************************
+
+.features {
+    margin-top: 96px;
+
+    .__title {
+        @include fontFamily('Sora', normal, 600, 48px, 64px);
+        letter-spacing: -0.03em;
+        color: rgba(39, 52, 100, 1);
+    }
+
+    .__description {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        width: 400px;
+        @include fontFamily('Sora', normal, 400, 20px, 32px);
+        letter-spacing: -0.02em;
+        color: rgba(126, 139, 182, 1);
+    }
+
+    .tiny__wrap {
+        max-width: 860px;
+        margin: 0 auto;
+    }
+
+    .wrap {
+        max-width: 860px;
+        height: 950px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .dashboard__panel {
+        box-sizing: border-box;
+        width: 400px;
+        height: 288px;
+        border: 1px solid rgba(204, 210, 233, 0.5);
+        border-radius: 16px;
+
+        img {
+            padding-left: 36px;
+            padding-top: 36px
+        }
+
+        .name__panel {
+            @include fontFamily('Sora', normal, 600, 24px, 32px);
+            letter-spacing: -0.02em;
+            color: rgba(7, 14, 39, 1);
+            padding-left: 32px;
+            padding-top: 36px
+        }
+
+        .description__panel {
+            @include fontFamily('Sora', normal, 400, 14px, 24px);
+            letter-spacing: -0.01em;
+            color: rgba(7, 14, 39, 1);
+            opacity: 0.5;
+            padding-left: 32px;
+            padding-top: 16px
+        }
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+
+    .features__promo {
+        margin-top: 96px;
+        width: 840px;
+        height: 328px;
+        background: rgba(0, 89, 247, 1);
+        border-radius: 24px;
+        text-align: center;
+
+        .question {
+            @include fontFamily('Sora', normal, 500, 20px, 32px);
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            opacity: 0.5;
+            padding-top: 72px;
+            color: #fff;
+        }
+
+        .promo__text {
+            @include fontFamily('Sora', normal, 600, 36px, 40px);
+            padding-top: 16px;
+            letter-spacing: -0.03em;
+            color: #fff;
+        }
+
+        button {
+            margin-top: 32px;
+            width: 178px;
+            height: 64px;
+            background: #689EFF;
+            border-radius: 8px;
+            border: none;
+
+            @include fontFamily('Sora', normal, 500, 16px, 24px);
+            color: #fff;
+
+            .arrow {
+                display: flex;
+                margin-left: 34px;
+            }
+
+            &:active {
+                background: #9dbffd
+            }
+        }
+    }
+}
+
+//*********************************************************************  FOOTER  **********************************************************************
+
+footer {
+    width: 100%;
+    height: 120px;
+    background: rgba(22, 32, 68, 1);
+    
+    .wrap {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .bio__links ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        li {
+            margin-right: 45px;
+        }
+    }
+
+    .terms__etc a {
+        @include fontFamily('Sora', normal, 400, 14px, 24px);
+        letter-spacing: 0em;
+        margin-right: 24px;
+        color: rgba(204, 210, 233, 1);
+        text-decoration: none;
+    }
+
+    .copyright {
+        @include fontFamily('Sora', normal, 400, 14px, 24px);
+        color: rgba(204, 210, 233, 1);
+    }
+}
