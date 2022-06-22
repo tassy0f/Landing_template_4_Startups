@@ -1,0 +1,50 @@
+@import '../../../../assets/mixins.scss';
+//*********************************************************************  HEADER  **********************************************************************
+header {
+    width: 100%;
+    height: 104px;
+
+    hr {
+        width: 100%;
+        border: 1px solid rgba(78, 90, 133, 1);
+        opacity: 0.1;
+    }
+    
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        
+    } 
+
+    .header__logo {
+        display: flex;
+        padding-top: 35px;
+        padding-bottom: 40px;
+
+        p {
+            @include fontFamily('Sora', normal, 600, 24px, 32px);
+            letter-spacing: -0.02em;
+            color: rgba(8, 17, 49, 1);
+            margin-left: 15px;
+        }
+    }
+
+    button {
+        width: 94px;
+        height: 56px;
+        background: rgba(152, 166, 199, 1);
+        border-radius: 8px;
+        align-items: center;
+        border:none;
+
+        margin-top: 24px;
+        margin-bottom: 24px;
+
+        color: rgba(255, 255, 255, 1);
+        @include fontFamily('Sora', normal, 500, 16px, 24px);
+
+        &:active {
+            background: rgba(0, 89, 247, 1);
+        }
+    }
+}

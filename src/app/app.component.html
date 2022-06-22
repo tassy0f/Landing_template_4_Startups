@@ -1,15 +1,5 @@
-  <header>
-    <div class="wrap">
-      <div class="header__logo">
-        <img src="../assets/logo.svg" alt="Logo">
-        <p>Saflow</p>
-      </div>
-      <button type="button">Login</button>
-    </div>
-    <hr/>
-  </header>
+  <app-header></app-header>
   <main>
-
     <div class="start__page">
       <div class="wrap">
         <div class="start__text">
@@ -82,12 +72,13 @@
         <div class="features__promo">
           <p class="question">READY TO START?</p>
           <p class="promo__text">Start your free trial today!</p>
-          <button class="get_started">
+          <button class="get_started" (click)="modalCall()">
             <div class="arrow">
               <p>Get Started</p>
               <img src="../assets/features_section/arrow.svg" alt="arrow)">
             </div>
           </button>
+          <app-get-started *ngIf="modalService.isShowDialog"></app-get-started>
         </div>
       </div>
       <p class="site__author">SAFLOW</p>
@@ -203,22 +194,4 @@
     </div>
 
   </main>
-  <footer>
-    <div class="wrap">
-      <div class="bio__links">
-        <ul>
-          <li><a href=""><img src="../assets/facebook-line1.svg" alt="Facebook"></a></li>
-          <li><a href=""><img src="../assets/twitter-line1.svg" alt="Twitter"></a></li>
-          <li><a href=""><img src="../assets/instagram-line1.svg" alt="Instagram"></a></li>
-          <li><a href=""><img src="../assets/linkedin-line1.svg" alt="LinkedIn"></a></li>
-        </ul>
-      </div>
-      <div class="terms__etc">
-        <a href="">Terms & Conditions</a>
-        <a href="">Privacy Policy</a>
-      </div>
-      <div class="copyright">
-        <p>2022 All right reserved</p>
-      </div>
-    </div>
-  </footer>
+  <app-footer></app-footer>

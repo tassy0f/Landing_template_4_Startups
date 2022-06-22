@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,4 +8,12 @@
 
 body {
     background: #F4F7FF;
+}
+
+.wrap {
+    max-width: 1340px;
+    max-height: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
