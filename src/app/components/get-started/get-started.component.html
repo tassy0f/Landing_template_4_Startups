@@ -1,1 +1,36 @@
-<p>get-started works!</p>
+<div class="modal__get-started">
+    <div class="tarifs__ul">
+        <ul>
+            <li>
+                <p>FREE</p>
+            </li>
+            <li>
+                <p>BASIC</p>
+            </li>
+            <li>
+                <p>PREMIUM</p>
+            </li>
+        </ul>
+        <hr/>
+    </div>
+    <div class="modal__price">
+        <div>
+            <p class="price">$<span>0</span></p>
+            
+        </div>
+        <div class="email__input">
+            <label for="Email">e-mail: </label>
+            <input type="email" id="Email" placeholder="name@example.com">
+        </div>
+    </div>
+    <div class="modal__price">
+        <ul class="features__list">
+            <li>7,000,000+ Events</li>
+            <li>4 Custom Domains</li>
+            <li>Dedicated Support Agent</li>
+            <li>12 Months Data History</li>
+            <li>1 Dedicated SSL</li>
+        </ul>
+        <div><button type="submit" (click)="modalClose()">SEND PLAN</button></div>
+    </div> 
+</div>

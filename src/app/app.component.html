@@ -9,7 +9,7 @@
         </div>
         <div class="start__description">
           <p>Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
-          <button>Pricing and Plans</button>
+          <a href="#price_carts"><button>Pricing and Plans</button></a>
         </div>
       </div>
       <div class="wrap">
@@ -112,7 +112,7 @@
       <p class="site__author">SAFLOW</p>
     </div>
 
-    <div class="price__section">
+    <div class="price__section" id="price_carts">
       <p class="how__title">Pricing</p>
       <div class="wrap">
         <div class="price__cart">
@@ -126,7 +126,7 @@
             <li>12 Months Data History</li>
             <li>1 Dedicated SSL</li>
           </ul>
-          <button class="get_started">
+          <button class="get_started" (click)="modalCall()">
             <div class="arrow">
               <p>Get Started</p>
               <img src="../assets/features_section/arrow.svg" alt="arrow)">
@@ -145,7 +145,7 @@
             <li>12 Months Data History</li>
             <li>1 Dedicated SSL</li>
           </ul>
-          <button class="get_started">
+          <button class="get_started" (click)="modalCall()">
             <div class="arrow">
               <p>Get Started</p>
               <img src="../assets/features_section/arrow.svg" alt="arrow)">
@@ -164,7 +164,7 @@
             <li>12 Months Data History</li>
             <li>1 Dedicated SSL</li>
           </ul>
-          <button class="get_started">
+          <button class="get_started" (click)="modalCall()">
             <div class="arrow">
               <p>Get Started</p>
               <img src="../assets/features_section/arrow.svg" alt="arrow)">
@@ -182,7 +182,7 @@
             <p class="promo__text">Start your free trial today!</p>
           </div>
           <div>
-            <button class="get_started">
+            <button class="get_started" (click)="modalCall()">
               <div class="arrow">
                 <p>Get Started</p>
                 <img src="../assets/features_section/arrow.svg" alt="arrow)">

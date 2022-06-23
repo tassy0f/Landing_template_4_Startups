@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-
+@import './assets/mixins.scss';
 * {
     margin: 0;
     padding: 0;
@@ -16,4 +15,31 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+}
+
+.price {
+    margin-top: 12px;
+    margin-left: 50px;
+    @include fontFamily('Sora', normal, 600, 54px, 64px);
+    letter-spacing: -0.04em;
+    color: #4E5A85;
+
+    span {
+        color: #fff;
+    }
+}
+
+.features__list {
+    margin-top: 48px;
+    list-style: none;
+
+    li {
+        margin-left: 50px;
+        margin-bottom: 24px;
+        @include fontFamily('Sora', normal, 400, 16px, 24px);
+        letter-spacing: -0.01em;
+        color: #CCD2E9;
+        padding-left: 36px;
+        background: url(./assets/checkbox.svg) no-repeat;
+    }
 }

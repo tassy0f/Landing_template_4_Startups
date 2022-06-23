@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalDialogService } from 'src/app/services/modal-dialog.service';
 
 @Component({
   selector: 'app-get-started',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetStartedComponent implements OnInit {
 
-  constructor() { }
+  constructor(public readonly dialog:ModalDialogService) { }
 
   ngOnInit(): void {
   }
 
+  modalClose() {
+    this.dialog.isShowDialog = false
+  }
 }
