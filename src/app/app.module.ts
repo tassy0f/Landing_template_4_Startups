@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SharedModule } from './components/shared/shared.module';
 import { GetStartedComponent } from './components/get-started/get-started.component';
+import { PriceCartComponent } from './components/price-cart/price-cart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GetStartedComponent
+    GetStartedComponent,
+    PriceCartComponent
   ],
   imports: [
     SharedModule,

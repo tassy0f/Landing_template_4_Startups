@@ -171,27 +171,6 @@ hr {
     color: #fff;
 }
 
-.get_started {
-    margin-top: 32px;
-    width: 178px;
-    height: 64px;
-    background: #689EFF;
-    border-radius: 8px;
-    border: none;
-
-    @include fontFamily('Sora', normal, 500, 16px, 24px);
-    color: #fff;
-
-    .arrow {
-        display: flex;
-        margin-left: 34px;
-    }
-
-    &:active {
-        background: #9dbffd
-    }
-}
-
 .site__author {
     margin-top: 148px;
     @include fontFamily('Sora', normal, 500, 20px, 32px);
@@ -245,48 +224,6 @@ hr {
 
 .price__section {
     margin-top: 8px;
-
-    .price__cart {
-        margin-top: 176px;
-        width: 400px;
-        height: 630px;
-        background: #081131;
-        box-shadow: 0px 35px 45px rgba(7, 14, 39, 0.05);
-        border-radius: 16px;
-
-        &:hover {
-            margin-top: 76px;
-            background: #162044;
-
-            .get_started {
-                background: #0059F7;
-            }
-        }
-
-        .price__rate {
-            margin-top: 48px;
-            margin-left: 50px;
-            @include fontFamily('Sora', normal, 500, 20px, 32px);
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-            color: #7E8BB6;
-        }
-
-        hr {
-            margin-top: 48px;
-            width: 304px;
-            background: #081131;
-            opacity: 0.16;
-            border-radius: 16px;
-        }
-
-        
-
-        .get_started {
-            margin-left: 50px;
-            background: #4E5A85;
-        }
-    }
 }
 
 //*************************************************************  SECTION PROMO PAGE  ******************************************************************
@@ -325,4 +262,3 @@ hr {
 
 
 }
-

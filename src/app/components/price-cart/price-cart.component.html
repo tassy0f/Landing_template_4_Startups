@@ -1,0 +1,19 @@
+<div class="price__cart">
+    <p class="price__rate">{{ratesListik.name}}</p>
+    <p class="price">$<span>{{ratesListik.price}}</span></p>
+    <hr/>
+    <ul class="features__list">
+      <li>{{ratesListik.features[0]}}</li>
+      <li>{{ratesListik.features[1]}}</li>
+      <li>{{ratesListik.features[2]}}</li>
+      <li>{{ratesListik.features[3]}}</li>
+      <li>{{ratesListik.features[4]}}</li>
+    </ul>
+    <button class="get_started" (click)="modalCall()">
+      <div class="arrow">
+        <p>Get Started</p>
+        <img src="../assets/features_section/arrow.svg" alt="arrow)">
+      </div>
+    </button>
+  </div>
+<!-- (click)="modalCall()" -->

@@ -115,62 +115,7 @@
     <div class="price__section" id="price_carts">
       <p class="how__title">Pricing</p>
       <div class="wrap">
-        <div class="price__cart">
-          <p class="price__rate">FREE</p>
-          <p class="price">$<span>0</span></p>
-          <hr/>
-          <ul class="features__list">
-            <li>7,000,000+ Events</li>
-            <li>4 Custom Domains</li>
-            <li>Dedicated Support Agent</li>
-            <li>12 Months Data History</li>
-            <li>1 Dedicated SSL</li>
-          </ul>
-          <button class="get_started" (click)="modalCall()">
-            <div class="arrow">
-              <p>Get Started</p>
-              <img src="../assets/features_section/arrow.svg" alt="arrow)">
-            </div>
-          </button>
-        </div>
-
-        <div class="price__cart">
-          <p class="price__rate">BASIC</p>
-          <p class="price">$<span>23</span></p>
-          <hr/>
-          <ul class="features__list">
-            <li>7,000,000+ Events</li>
-            <li>4 Custom Domains</li>
-            <li>Dedicated Support Agent</li>
-            <li>12 Months Data History</li>
-            <li>1 Dedicated SSL</li>
-          </ul>
-          <button class="get_started" (click)="modalCall()">
-            <div class="arrow">
-              <p>Get Started</p>
-              <img src="../assets/features_section/arrow.svg" alt="arrow)">
-            </div>
-          </button>
-        </div>
-
-        <div class="price__cart">
-          <p class="price__rate">PREMIUM</p>
-          <p class="price">$<span>59</span></p>
-          <hr/>
-          <ul class="features__list">
-            <li>7,000,000+ Events</li>
-            <li>4 Custom Domains</li>
-            <li>Dedicated Support Agent</li>
-            <li>12 Months Data History</li>
-            <li>1 Dedicated SSL</li>
-          </ul>
-          <button class="get_started" (click)="modalCall()">
-            <div class="arrow">
-              <p>Get Started</p>
-              <img src="../assets/features_section/arrow.svg" alt="arrow)">
-            </div>
-          </button>
-        </div>
+        <app-price-cart *ngFor="let rate of ratesList" [ratesListik]="rate"></app-price-cart>
       </div>
     </div>
 

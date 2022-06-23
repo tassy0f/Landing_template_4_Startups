@@ -43,3 +43,24 @@ body {
         background: url(./assets/checkbox.svg) no-repeat;
     }
 }
+
+.get_started {
+    margin-top: 32px;
+    width: 178px;
+    height: 64px;
+    background: #689EFF;
+    border-radius: 8px;
+    border: none;
+
+    @include fontFamily('Sora', normal, 500, 16px, 24px);
+    color: #fff;
+
+    .arrow {
+        display: flex;
+        margin-left: 34px;
+    }
+
+    &:active {
+        background: #9dbffd
+    }
+}
