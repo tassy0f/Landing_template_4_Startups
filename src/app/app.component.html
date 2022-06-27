@@ -72,7 +72,7 @@
         <div class="features__promo">
           <p class="question">READY TO START?</p>
           <p class="promo__text">Start your free trial today!</p>
-          <button class="get_started" (click)="modalCall()">
+          <button class="get_started" (click)="callSendPlan()">
             <div class="arrow">
               <p>Get Started</p>
               <img src="../assets/features_section/arrow.svg" alt="arrow)">
@@ -127,7 +127,7 @@
             <p class="promo__text">Start your free trial today!</p>
           </div>
           <div>
-            <button class="get_started" (click)="modalCall()">
+            <button class="get_started" (click)="callSendPlan()">
               <div class="arrow">
                 <p>Get Started</p>
                 <img src="../assets/features_section/arrow.svg" alt="arrow)">
@@ -137,6 +137,6 @@
         </div>
       </div>
     </div>
-
+    <app-gs-send-plan *ngIf="modalService.isShowModalGetStartedSendPlan"></app-gs-send-plan>
   </main>
   <app-footer></app-footer>

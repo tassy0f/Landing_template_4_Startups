@@ -9,5 +9,7 @@ export class ModalDialogService {
 
   public isShowModalForm: boolean = false
 
+  public isShowModalGetStartedSendPlan: boolean = false
+
   constructor() { }
 }

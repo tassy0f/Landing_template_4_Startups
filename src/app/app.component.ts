@@ -53,8 +53,8 @@ export class AppComponent implements OnInit{
       ]
     )
   ]
-  
-  modalCall() {
-    this.modalService.isShowDialog = true
+
+  callSendPlan() {
+    this.modalService.isShowModalGetStartedSendPlan = true
   }
 }

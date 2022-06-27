@@ -18,7 +18,11 @@ export class GetStartedComponent implements OnInit {
   })
   }
 
-  modalClose() {
+  checkAuth() {
+    
+  }
+
+  closeWindow() {
     this.dialog.isShowDialog = false
   }
 }
