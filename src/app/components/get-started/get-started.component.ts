@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Rates } from 'src/app/models/rates';
+import { MessageService } from 'src/app/services/message.service';
 import { ModalDialogService } from 'src/app/services/modal-dialog.service';
 
 @Component({
@@ -7,10 +9,13 @@ import { ModalDialogService } from 'src/app/services/modal-dialog.service';
   styleUrls: ['./get-started.component.scss']
 })
 export class GetStartedComponent implements OnInit {
-
-  constructor(public readonly dialog:ModalDialogService) { }
+  @Input() rateInfo:any = [];
+  constructor(private messageServ:MessageService,public readonly dialog:ModalDialogService) { }
 
   ngOnInit(): void {
+    this.messageServ.getMessage().subscribe((rate: Rates) => {
+      this.rateInfo = rate
+  })
   }
 
   modalClose() {

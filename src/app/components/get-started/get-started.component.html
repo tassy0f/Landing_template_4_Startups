@@ -15,7 +15,7 @@
     </div>
     <div class="modal__price">
         <div>
-            <p class="price">$<span>0</span></p>
+            <p class="price">$<span>{{rateInfo.price}}</span></p>
             
         </div>
         <div class="email__input">
@@ -25,11 +25,11 @@
     </div>
     <div class="modal__price">
         <ul class="features__list">
-            <li>7,000,000+ Events</li>
-            <li>4 Custom Domains</li>
-            <li>Dedicated Support Agent</li>
-            <li>12 Months Data History</li>
-            <li>1 Dedicated SSL</li>
+            <li>{{rateInfo.features[0]}}</li>
+            <li>{{rateInfo.features[1]}}</li>
+            <li>{{rateInfo.features[2]}}</li>
+            <li>{{rateInfo.features[3]}}</li>
+            <li>{{rateInfo.features[4]}}</li>
         </ul>
         <div><button type="submit" (click)="modalClose()">SEND PLAN</button></div>
     </div> 

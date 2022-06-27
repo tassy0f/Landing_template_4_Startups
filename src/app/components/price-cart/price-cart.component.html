@@ -16,4 +16,4 @@
       </div>
     </button>
   </div>
-<!-- (click)="modalCall()" -->
+  <app-get-started *ngIf="dialog.isShowDialog" [rateInfo]="this.ratesListik"></app-get-started>
