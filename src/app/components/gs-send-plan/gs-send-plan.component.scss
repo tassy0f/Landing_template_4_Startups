@@ -56,12 +56,41 @@ hr {
 .actions__buttons {
     max-width: 400px;
     margin-top: 5%;
-    margin-left: 45%;
+    margin-left: -3%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .get_started {
+    margin-left: 20px;
     width: 175px;
     height: 52px;
+}
+
+.email__input {
+
+    p {
+        text-align: left;
+        @include fontFamily('Sora', normal, 400, 21px, 16px);
+        letter-spacing: -0.04em;
+        color: #CCD2E9;
+    }
+
+    input {
+        margin-top: 10px;
+        margin-left: -3%;
+        @include fontFamily('Sora', normal, 400, 26px, 32px);
+        letter-spacing: -0.04em;
+        color: #CCD2E9;
+        
+        border: 1px #4E5A85 solid;
+        border-radius: 10px;
+    }
+
+    .get_started {
+        background: #31c538;
+        margin-top: 8px;
+        margin-left: -1%;
+        display: block;
+    }
 }
