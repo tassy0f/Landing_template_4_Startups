@@ -1,11 +1,4 @@
 @import '../assets/mixins.scss';
-//*********************************************************************  MAIN  **********************************************************************
-
-// main {
-//     width: 100%;
-//     height: 1244px;
-// }
-
 //*********************************************************************  SECTION START PAGE  **********************************************************
 
 .start__page {
@@ -77,6 +70,77 @@ hr {
     margin: 0 auto;
     border: 1px solid rgba(78, 90, 133, 1);
     opacity: 0.1;
+}
+
+
+@include xs{
+    .wrap {
+        display: block;
+    }
+
+    .start__page {
+        width: 100%;
+        height: 515px;
+    
+        .start__text {
+            @include fontFamily('Sora', normal, 700, 55px, 66px);
+            letter-spacing: -0.03em;
+            color: rgba(22, 32, 68, 1);
+            margin-top: 12px;
+            margin-left: 10px;
+        }
+    
+        .start__description {
+            width: 95%;
+            @include fontFamily('Sora', normal, 400, 20px, 32px);
+            letter-spacing: -0.02em;
+            color: rgba(126, 139, 182, 1);
+            margin-top: 13px;
+            margin-left: 15px;
+    
+            button {
+                width: 188px;
+                height: 56px;
+                background: rgba(0, 89, 247, 1);
+                border-radius: 8px;
+                align-items: center;
+                border:none;
+    
+                margin-top: 32px;
+    
+                color: rgba(255, 255, 255, 1);
+                @include fontFamily('Sora', normal, 500, 16px, 24px);
+    
+                &:active {
+                    background: rgb(66, 133, 250);
+                }
+            }
+        }
+    
+        .start__dashboard {
+            display: none;
+        }
+    
+        .companies__list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 36px;
+            img {
+                width: 58px;
+                margin-left: 5px;
+            }
+        }
+    }
+    
+    hr {
+        margin-top: 94px;
+        width: 1060px;
+        margin: 0 auto;
+        border: 1px solid rgba(78, 90, 133, 1);
+        opacity: 0.1;
+    }
 }
 
 //**************************************************************  SECTION FEATURES PAGE  **************************************************************

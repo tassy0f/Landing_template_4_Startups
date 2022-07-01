@@ -48,3 +48,54 @@ header {
         }
     }
 }
+
+@include xs{
+    header {
+        width: 100%;
+        height: 76px;
+    
+        hr {
+            width: 100%;
+            border: 1px solid rgba(78, 90, 133, 1);
+            opacity: 0.1;
+            margin-top: -20px;
+        }
+        
+        .wrap {
+            display: flex;
+            justify-content: space-between;
+            
+        } 
+    
+        .header__logo {
+            display: flex;
+            margin-top: -15px;
+            margin-left: 10px;
+    
+            p {
+                @include fontFamily('Sora', normal, 600, 24px, 32px);
+                letter-spacing: -0.02em;
+                color: rgba(8, 17, 49, 1);
+                margin-left: 5px;
+            }
+        }
+    
+        button {
+            width: 70px;
+            height: 40px;
+            background: #98a6c7;
+            border-radius: 8px;
+            align-items: center;
+            border: none;
+            margin-top: 15px;
+            margin-right: 16px;
+    
+            color: rgba(255, 255, 255, 1);
+            @include fontFamily('Sora', normal, 500, 14px, 24px);
+    
+            &:active {
+                background: rgba(0, 89, 247, 1);
+            }
+        }
+    }
+}
