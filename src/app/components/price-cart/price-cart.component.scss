@@ -39,3 +39,20 @@
         background: #4E5A85;
     }
 }
+
+@include xs {
+    .price__cart {
+        margin-left: 10px;
+        margin-top: 22px;
+        width: 350px;
+        height: 630px;
+    
+        hr {
+            width: 254px; 
+        }
+    
+        .get_started {
+            margin-top: -1px;
+        }
+    }
+}

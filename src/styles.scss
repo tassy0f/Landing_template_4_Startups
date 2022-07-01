@@ -67,23 +67,10 @@ body {
 
 @include xs{
     .wrap {
-        max-width: 480px;
-        max-height: 1240px;
+        max-width: 370px;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
-    }
-    
-    .price {
-        margin-top: 12px;
-        margin-left: 50px;
-        @include fontFamily('Sora', normal, 600, 54px, 64px);
-        letter-spacing: -0.04em;
-        color: #4E5A85;
-    
-        span {
-            color: rgb(216, 50, 50);
-        }
     }
     
     .features__list {
@@ -100,25 +87,16 @@ body {
             background: url(./assets/checkbox.svg) no-repeat;
         }
     }
+
+    .price {
+        margin-top: 12px;
+        margin-left: 50px;
+        @include fontFamily('Sora', normal, 600, 54px, 64px);
+        letter-spacing: -0.04em;
+        color: #4E5A85;
     
-    .get_started {
-        margin-top: 32px;
-        width: 178px;
-        height: 64px;
-        background: #689EFF;
-        border-radius: 8px;
-        border: none;
-    
-        @include fontFamily('Sora', normal, 500, 16px, 24px);
-        color: #fff;
-    
-        .arrow {
-            display: flex;
-            margin-left: 34px;
+        span {
+            color: #fff;
         }
-    
-        &:active {
-            background: #9dbffd
-        }
-    }
+    }    
 }

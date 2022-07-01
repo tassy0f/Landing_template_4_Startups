@@ -33,3 +33,30 @@ footer {
         color: rgba(204, 210, 233, 1);
     }
 }
+
+@include xs {
+    footer {
+        height: 80px;
+        
+        .wrap {
+            padding-top: 30px;
+            padding-bottom: 0px;
+        }
+    
+        .bio__links ul {    
+            li {
+                margin-right: 5px;
+            }
+        }
+    
+        .terms__etc a {
+            display: block;
+            @include fontFamily('Sora', normal, 400, 10px, 20px);
+            margin-right: 16px;
+        }
+    
+        .copyright {
+            @include fontFamily('Sora', normal, 400, 10px, 20px);
+        }
+    }
+}
