@@ -1,7 +1,6 @@
 @import '../../../../assets/mixins.scss';
 //*********************************************************************  HEADER  **********************************************************************
 header {
-    width: 100%;
     height: 104px;
 
     hr {
@@ -52,6 +51,32 @@ header {
 @include xs{
     header {
         width: 100%;
+        height: 76px;
+    
+        hr {
+            margin-top: -20px;
+        }
+    
+        .header__logo {
+            display: flex;
+            margin-top: -15px;
+            margin-left: 10px;
+    
+            p {
+                margin-left: 5px;
+            }
+        }
+    
+        button {
+            width: 70px;
+            height: 40px;
+            margin-top: 14px;
+        }
+    }
+}
+
+@include sm {
+    header {
         height: 76px;
     
         hr {

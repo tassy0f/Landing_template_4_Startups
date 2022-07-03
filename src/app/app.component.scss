@@ -2,7 +2,6 @@
 //*********************************************************************  SECTION START PAGE  **********************************************************
 
 .start__page {
-    width: 100%;
     height: 1244px;
 
     .start__text {
@@ -72,8 +71,7 @@ hr {
     opacity: 0.1;
 }
 
-
-@include xs {
+@include xs {      // for mobile
     .wrap {
         display: block;
     }
@@ -95,6 +93,64 @@ hr {
     
         .start__dashboard {
             display: none;
+        }
+    
+        .companies__list {
+            width: 100%;
+            margin-top: 36px;
+            img {
+                width: 58px;
+                margin-left: 5px;
+            }
+        }
+    }
+    
+    hr {
+        width: 100%;
+    }
+}
+
+@include sm {
+
+    .start__page {
+        .wrap {
+            width: 100%;
+        }
+
+        height: 782px;
+    
+        .start__text {
+            @include fontFamily('Sora', normal, 700, 55px, 60px);
+            margin-top: 12px;
+            margin-left: 10px;
+        }
+    
+        .start__description {
+            margin-top: 13px;
+            margin-left: 15px;
+        }
+    
+        .start__dashboard {
+            margin-top: 20px;
+            margin-left: 5px;
+            width: 100%;
+            img {
+                max-width: 100%;
+            }
+
+            .start__loader {
+                left: 2%;
+                img {
+                    max-width: 100px;
+                }
+            }
+
+            .dashboard__message {
+                left: 21%;
+                img {
+                    max-width: 105%;
+                }
+            }
         }
     
         .companies__list {
@@ -251,6 +307,40 @@ hr {
     }
 }
 
+@include sm {
+    .features {
+        margin-top: 20px;
+        height: 1500px;
+    
+    
+        .tiny__wrap {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    
+        .wrap {
+            max-width: 100%;
+        }
+    
+        .dashboard__panel {
+            margin-bottom: 15px;
+            
+            width: 50%;
+            height: 300px;
+        }
+    
+        .features__promo {
+            margin-top: 15px;
+            max-width: 100%;
+            height: 328px;
+        }
+    }
+    
+    .site__author {
+        margin-top: 18px;
+    }
+}
+
 //**********************************************************  SECTION HOW IT WORKS PAGE  **************************************************************
 
 .how_it_works {
@@ -304,6 +394,7 @@ hr {
         .how_it_works__panel {
             width: 370px;
             height: 230px;
+            margin-left: 10px;
 
             img {
                 width: 370px;
@@ -325,6 +416,42 @@ hr {
     }
 }
 
+@include sm {
+    .how_it_works {
+        margin-top: 18px;
+        height: 930px;
+    
+        .wrap {
+            margin-top: 32px;
+            max-width: 100%;
+            flex-direction: row;
+        }
+    
+        .how_it_works__panel {
+            width: 50%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 230px;
+            }
+        }
+    
+        .how_it_title__name {
+            margin-top: 0px;
+        }
+    
+        .how_it_title__description {
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .site__author {
+            margin-top: 67px;
+        }
+    }
+}
+
 //**********************************************************  SECTION PRICING PAGE  **************************************************************
 
 .price__section {
@@ -334,6 +461,17 @@ hr {
 @include xs {
     .price__section{
         height: 1865px;
+    }  
+}
+
+@include sm {
+    .price__section{
+        height: 1515px;
+
+        .wrap {
+            flex-direction: column;
+            padding-top: 200px;
+        }
     }  
 }
 
@@ -394,6 +532,34 @@ hr {
             .get_started {
                 margin-top: 50px;
                 margin-left: 25%;
+            }
+        }
+    }
+}
+
+@include sm {
+    .promo {
+        margin-top: 172px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        
+        .block {
+            width: 100%;
+            height: 228px;
+            display: block;
+    
+            .question {
+                margin-left: 30px;
+                padding-top: 30px;
+            }
+    
+            .promo__text {
+                margin-left: 30px;
+            }
+    
+            .get_started {
+                margin-top: 36px;
+                margin-left: 36%;
             }
         }
     }
