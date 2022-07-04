@@ -4,7 +4,9 @@
         <img src="./assets/logo.svg" alt="Logo">
         <p>Saflow</p>
       </div>
-      <button type="button">Login</button>
+      <button type="button" (click)="showLogin()">Login</button>
     </div>
+    <app-login *ngIf="modalDialog.isShowLogin"></app-login>
     <hr/>
   </header>
+  

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalDialogService } from 'src/app/services/modal-dialog.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public readonly modalDialog:ModalDialogService) { }
 
   ngOnInit(): void {
+  }
+
+  showLogin() {
+    this.modalDialog.isShowLogin = true
   }
 
 }

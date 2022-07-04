@@ -1,0 +1,28 @@
+<div class="modal__login">
+    <div class="wrap">
+        <div class="title">
+            <p>Here is Login!</p>
+        </div>
+        <div class="close__btn">
+            <img src="../../../assets/Close_icon-icons.com_71857.svg" alt="Close" (click)="closeLoginWindow()">
+        </div> 
+    </div>
+    <hr/>
+
+    <div class="wrap">
+        <form #loginForm="ngForm" (ngSubmit)="login()">
+            <div>
+                <label for="username">Username</label>
+                <input id="username" name="username" [(ngModel)]="model.username">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" [(ngModel)]="model.password">
+            </div>
+            <button>Login</button>
+        </form>
+    </div>
+</div>
+
+

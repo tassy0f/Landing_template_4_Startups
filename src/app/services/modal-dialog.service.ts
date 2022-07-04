@@ -11,5 +11,7 @@ export class ModalDialogService {
 
   public isShowModalGetStartedSendPlan: boolean = false
 
+  public isShowLogin:boolean = false
+
   constructor() { }
 }
