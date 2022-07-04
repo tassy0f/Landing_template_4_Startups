@@ -370,7 +370,7 @@ hr {
         width: 400px;
         @include fontFamily('Sora', normal, 400, 20px, 32px);
         letter-spacing: -0.02em;
-        color: rgba(126, 139, 182, 1);
+        color: rgba(126, 139, 182, 1); 
         margin-top: 28px;
     }
 }

@@ -46,6 +46,15 @@
         margin-top: 22px;
         width: 350px;
         height: 630px;
+
+        &:hover {
+            margin-top: 0px;
+            background: #081131;
+    
+            .get_started {
+                background: #0059F7;
+            }
+        }
     
         hr {
             width: 254px; 
@@ -63,8 +72,17 @@
         margin-left: 10px;
         margin-top: 22px;
         
-        width: 100%;
+        width: 98%;
         height: 500px;
+
+        &:hover {
+            margin-top: 0px;
+            background: #081131;
+    
+            .get_started {
+                background: #0059F7;
+            }
+        }
     
         hr {
             width: 90%; 
