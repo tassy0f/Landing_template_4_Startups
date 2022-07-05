@@ -1,9 +1,35 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
+    "users": [
+      { "id": 1, 
+        "fmiliya": "Орлов", 
+        "imya": "Александр",
+        "otchestvo": "Максимович",
+        "tel-number": "89837652745",
+        "email": "347753679@mail.ru",
+        "rate": "rates"
+      }
     ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+    "rates": [
+      { "id": 1, 
+        "layouts": 3, 
+        "name": "free",
+        "tech-support": 60,
+        "host-support": 30,
+        "site-support": 30
+      },
+      { "id": 2, 
+        "layouts": 7, 
+        "name": "basic",
+        "tech-support": 300,
+        "host-support": 120,
+        "site-support": 180
+      },
+      { "id": 3, 
+        "layouts": 12, 
+        "name": "premium",
+        "tech-support": 600,
+        "host-support": 240,
+        "site-support": 480
+      }
+    ]
   }
