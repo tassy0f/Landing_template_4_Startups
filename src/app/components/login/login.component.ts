@@ -8,7 +8,7 @@ import { ModalDialogService } from 'src/app/services/modal-dialog.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private readonly modalDialog:ModalDialogService) { }
+  constructor(readonly modalDialog:ModalDialogService) { }
 
   model: any = {}
 

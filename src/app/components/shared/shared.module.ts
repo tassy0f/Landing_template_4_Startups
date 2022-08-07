@@ -5,12 +5,14 @@ import { LoginComponent } from "../login/login.component";
 
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
+import { PersonalCabinetComponent } from "../personal-cabinet/personal-cabinet.component";
 
 @NgModule({
     declarations:[
         HeaderComponent,
         FooterComponent,
-        LoginComponent
+        LoginComponent,
+        PersonalCabinetComponent
     ],
     imports:[
         BrowserModule,

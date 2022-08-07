@@ -13,5 +13,7 @@ export class ModalDialogService {
 
   public isShowLogin:boolean = false
 
+  public isSHowPersonalCabinet:boolean = true
+
   constructor() { }
 }
