@@ -34,6 +34,11 @@
         color: rgba(8, 17, 49, 1);
         margin-left: 15px;
     }
+
+    .lk_picture {
+        margin-left: 12px;
+        margin-top: -5px;
+    }
 }
 
 hr {
@@ -45,45 +50,107 @@ hr {
 .user__info__div {
     margin-top: 32px;
     width: 80%;
-    height: 600px;
+    height: 500px;
+
+    p {
+        padding-top: 12px;
+        padding-left: 12px;
+        @include fontFamily('Sora', normal, 600, 24px, 32px);
+    }
+
+    button {
+        margin-top: 29%;
+        margin-right: 3%;
+        width: 178px;
+        height: 64px;
+        background: #1d8d21;
+        border-radius: 8px;
+        border: none;
+        @include fontFamily('Sora', normal, 500, 16px, 24px);
+        color: #fff;
+
+        &:active {
+            background: #86b86f
+        }
+    }
 }
 
 .user__info {
+    display: flex;
+    justify-content: space-between;
     margin-top: 36px;
     width: 100%;
     height: 400px;
-    background-color: #96a7de;
-    border: 1px solid rgba(204, 210, 233, 0.5);
+    border: 1px solid rgba(92, 99, 129, 0.5);
     border-radius: 16px;
 }
 
-a {
-    padding-top: 12px;
-    padding-left: 12px;
-    @include fontFamily('Sora', normal, 600, 24px, 32px);
-}
-
 form {
-    margin-top: 32px;
+    margin-top: 22px;
     display: flex;
     flex-direction: column;
 
     label {
         @include fontFamily('Sora', normal, 500, 24px, 28px);
         margin-top: 10px;
-        margin-left: 12px;
+        margin-left: 22px;
     }
 
     input {
         @include fontFamily('Sora', normal, 400, 24px, 28px);
-        width: 80%;
+        width: 75%;
         border: 1px solid rgba(204, 210, 233, 0.5);
         border-radius: 8px;
         margin-top: 10px;
-        margin-left: 12px;
+        margin-left: 22px;
     }
 
     span {
         @include fontFamily('Sora', normal, 400, 22px, 26px);
+    }
+}
+
+.user__rate__info {
+    margin-top: 36px;
+    width: 100%;
+    height: 400px;
+    background-color: #96a7de;
+    border: 1px solid rgba(204, 210, 233, 0.5);
+    border-radius: 16px;
+
+    .wrap {
+        justify-content: space-between;
+    }
+
+    p {
+        margin-left: 20px;
+    }
+
+    .rate__plan {
+        margin-top: 10px;
+        @include fontFamily('Sora', normal, 600, 32px, 45px);
+    }
+
+    .price {
+        margin-top: 10px;
+        margin-right: 30px;
+        @include fontFamily('Sora', normal, 600, 32px, 45px);
+    }
+
+    .update__rate_button {
+        margin-top: -3%;
+    }
+}
+
+.features__list {
+    margin-left: 50px;
+    margin-top: 38px;
+    list-style: none;
+
+    li {
+        margin-left: 0px;
+        margin-bottom: 24px;
+        padding-left: 36px;
+        color: #dae0f5;
     }
 }

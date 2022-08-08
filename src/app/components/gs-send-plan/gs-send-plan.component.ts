@@ -18,4 +18,9 @@ export class GsSendPlanComponent implements OnInit {
   closeWindow() {
     this.modalDialog.isShowModalGetStartedSendPlan = false
   }
+
+  showlogin() {
+    this.modalDialog.isShowModalGetStartedSendPlan = false;
+    this.modalDialog.isShowLogin = true
+  }
 }

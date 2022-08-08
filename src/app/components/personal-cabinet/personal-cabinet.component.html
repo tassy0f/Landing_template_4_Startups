@@ -1,12 +1,12 @@
 <div class="header">
     <div class="wrap">
-        <div class="header__logo">
+        <div class="header__logo" (click)="closePersonalCabinet()">
           <img src="./assets/logo.svg" alt="Logo">
           <p>Saflow</p>
         </div>
         <div class="header__logo">
             <p>Roman M.</p>
-            <img src="" alt="LK-picture || avatar">
+            <img src="../../../assets/LK-logo.svg" class="lk_picture" alt="LK-picture || avatar">
         </div>
     </div>
     <hr/>    
@@ -14,7 +14,30 @@
 
 <div class="wrap">
     <div class="user__info__div">
-        <a (click)="closePersonalCabinet()">Back</a>
+        <p>Your rate plan:</p>
+        <div class="user__rate__info">
+            <div class="wrap">
+                <p class="rate__plan">{{"Basic"}}</p>
+                <p class="price">$<span>{{"0"}} / per. month</span></p>
+            </div>
+            <ul class="features__list">
+                <li>{{"rateInfo.features[0]"}}</li>
+                <li>{{"rateInfo.features[1]"}}</li>
+                <li>{{"rateInfo.features[2]"}}</li>
+                <li>{{"rateInfo.features[3]"}}</li>
+                <li>{{"rateInfo.features[4]"}}</li>
+            </ul>
+            <div class="wrap">
+                <p>Your rate is active for: "$date"</p>
+                <button class="update__rate_button">Update rate</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrap">
+    <div class="user__info__div">
+        <p>Your Personal data: </p>
         <div class="user__info">
             <form>
                 <label for="name">Name: <span>"$Roman"</span></label>
@@ -31,9 +54,9 @@
 
                 <label>Transaction date:  <span>"$15.09.2022""</span></label>
             </form>
+            <button>Save Info</button>
         </div>
-        <button class="get_started">Change Info</button>
     </div>
 </div>
 
-<div class="user__rate__info"></div>
+<app-footer></app-footer>

@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
 
   showLogin() {
     this.modalDialog.isShowLogin = true
+    this.modalDialog.isSHowPersonalCabinet = true
   }
 
 }
