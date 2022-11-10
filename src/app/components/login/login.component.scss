@@ -64,3 +64,20 @@ hr {
         width: 90%;
     }
 }
+
+@include  sm {
+    .modal__login {
+        width: 90%;
+        height: 515px;
+        border-radius: 14px;
+        margin-left: -5px;
+    }
+
+    .wrap {
+        width: 85%;
+    }
+    
+    hr {
+        width: 90%;
+    }
+}

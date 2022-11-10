@@ -23,6 +23,7 @@ export class GetStartedComponent implements OnInit {
   }
 
   closeWindow() {
-    this.dialog.isShowDialog = false
+    this.dialog.isShowDialog = false;
+    document.body.style.overflow = 'visible';
   }
 }

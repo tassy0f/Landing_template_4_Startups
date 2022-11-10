@@ -15,6 +15,6 @@ export class PersonalCabinetComponent implements OnInit {
 
 
   closePersonalCabinet() {
-    this.modalDialog.isSHowPersonalCabinet = false
+    this.modalDialog.isSHowPersonalCabinet = false;
   }
 }

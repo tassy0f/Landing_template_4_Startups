@@ -21,5 +21,6 @@ export class PriceCartComponent implements OnInit {
   modalCall(){
     this.dialog.isShowDialog = true
     this.msge.sendMessage(this.ratesListik)
+    document.body.style.overflow = 'hidden';
   }
 }

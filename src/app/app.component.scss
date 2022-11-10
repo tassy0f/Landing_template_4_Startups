@@ -42,9 +42,14 @@
         position: relative;
 
         .start__loader {
+            height: 180px;
+            width: 182px;
+            border-radius: 15%;
+            box-shadow: .2rem .2rem .4rem rgba(0, 0, 0, 0.6);
+            background-color: #0059F7;
             position: absolute;
-            left: -10%;
             top: 30%;
+            right: 85%;
         }
 
         .dashboard__message {
@@ -52,6 +57,121 @@
             left: 30%;
             top: 44%;
         }
+
+        .frame {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            margin-top: -200px;
+            margin-left: -200px;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+          
+        .circle-big {
+            position: relative;
+            width: 114px;
+            height: 114px;
+            margin: 30px auto 25px auto;
+        }
+          
+        .circle-big svg {
+            width: 114px;
+            height: 114px;
+        }
+          
+        .circle-big .bg {
+          fill: none;
+            stroke-width: 10px;
+            stroke: rgba(255, 255, 255, 0.2);
+        }
+          
+        .circle-big .progress_1 {
+            fill: none;
+            stroke-width: 11px;
+            stroke: rgba(255, 255, 255, 0.6);
+            stroke-linecap: round;
+            stroke-dasharray: 326.56;
+            stroke-dashoffset: 190;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+            animation: smal 1.5s ease-in-out;
+        }
+
+        .circle-big .progress_2 {
+            fill: none;
+            stroke-width: 11px;
+            stroke: rgba(255, 255, 255, 0.4);
+            stroke-linecap: round;
+            stroke-dasharray: 326.56;
+            stroke-dashoffset: 140;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+            animation: midle 1.5s ease-in-out;
+        }
+
+        .circle-big .progress_3 {
+            fill: none;
+            stroke-width: 11px;
+            stroke: rgba(255, 255, 255, 0.3);
+            stroke-linecap: round;
+            stroke-dasharray: 326.56;
+            stroke-dashoffset: 100;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+            animation: big 1.5s ease-in-out;
+        }
+          
+        .circle-big .text {
+            position: absolute;
+            width: 100%;
+            top: 37px;
+            @include fontFamily('Sora', normal, 600, 24px, 32px);
+            text-align: center;
+        }
+          
+        @keyframes smal {
+          from {
+              stroke-dashoffset: 326.56;
+            }
+            to {
+              stroke-dashoffset: 190;
+            }
+        }
+
+        @keyframes midle {
+            from {
+                stroke-dashoffset: 326.56;
+              }
+              to {
+                stroke-dashoffset: 140;
+              }
+          }
+
+          @keyframes big {
+            from {
+                stroke-dashoffset: 326.56;
+              }
+              to {
+                stroke-dashoffset: 100;
+              }
+          }
+          
+        @keyframes appear {
+              0%, 50% {
+                  opacity: 0;
+              }
+              100% {
+                  opacity: 1;
+              }
+        }
+          
     }
 
     .companies__list {
@@ -71,7 +191,8 @@ hr {
     opacity: 0.1;
 }
 
-@include xs {      // for mobile
+// for mobile
+@include xs {      
     .wrap {
         display: block;
     }

@@ -17,7 +17,8 @@ export class LoginComponent implements OnInit {
   }
 
   closeLoginWindow() {
-    this.modalDialog.isShowLogin = false
+    this.modalDialog.isShowLogin = false;
+    document.body.style.overflow = 'visible';
   }
 
   login() {

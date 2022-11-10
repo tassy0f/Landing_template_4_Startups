@@ -15,8 +15,23 @@
       <div class="wrap">
         <div class="start__dashboard">
           <img src="../assets/Dashboard_Large_(Light).svg" alt="Dashboard_Large">
-          <div class="start__loader"><img src="../assets/Loader.svg" alt="Временно тут"></div>
-          <div class="dashboard__message"><img src="../assets/dashboard_message.svg" alt="Временно тут"></div>
+          <div id="startLoader"class="start__loader">
+            <!-- <img src="../assets/Loader.svg" alt="Временно тут"> -->
+            <div class="frame">
+              <div class="circle-big">
+                <div id="out" class="text">
+                  76%
+                </div>
+                <svg>
+                  <circle class="bg" cx="57" cy="57" r="52"></circle>
+                  <circle class="progress_1" cx="57" cy="57" r="52"></circle>
+                  <circle class="progress_2" cx="57" cy="57" r="52"></circle>
+                  <circle class="progress_3" cx="57" cy="57" r="52"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div id="dashboardMessage" class="dashboard__message"><img src="../assets/dashboard_message.svg" alt="Временно тут"></div>
         </div>
       </div>
       <div class="wrap">
