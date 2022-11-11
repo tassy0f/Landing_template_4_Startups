@@ -92,3 +92,15 @@ body {
         max-width: 920px;
     } 
 }
+
+@include lg {
+    .wrap {
+        max-width: 1200px;
+    }
+
+    .features__list {
+        height: 310px;
+        width: 95%;
+        margin-left: -11%;
+    }
+}

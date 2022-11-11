@@ -470,6 +470,70 @@ hr {
     }
 }
 
+@include lg {
+    .start__page {
+        height: 100%;
+
+        .wrap {
+            width: 100%;
+            margin: 0 auto;
+        }
+    
+        .start__text {
+            @include fontFamily('Sora', normal, 700, 55px, 60px);
+            margin-top: 12px;
+            margin-left: 10px;
+        }
+    
+        .start__description {
+            margin-top: 13px;
+            margin-left: 15px;
+        }
+    
+        .start__dashboard {
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 100%;
+            img {
+                margin-left: 4%;
+                max-width: 98%;
+            }
+
+            .start__loader {
+                left: 2%;
+                max-width: 13%;
+                max-height: 21%;
+            }
+
+            .frame {
+                .big_display {
+                    display: block;
+                }
+
+                .circle-big .text {
+                    top: 40px;
+                    @include fontFamily('Sora', normal, 600, 24px, 32px);
+                }
+            }
+        }
+    
+        .companies__list {
+            width: 85%;
+            margin-right: 2%;
+            margin-top: 36px;
+            img {
+                width: 58px;
+                margin-left: 5px;
+            }
+        }
+    }
+    
+    hr {
+        width: 87%;
+        margin-right: 7%;
+    }
+}
+
 //**************************************************************  SECTION FEATURES PAGE  **************************************************************
 
 .features {
@@ -691,14 +755,14 @@ hr {
 
     .wrap {
         margin-top: 96px;
-        width: 1300px;
+        max-width: 1300px;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
     .how_it_works__panel {
-        width: 500px;
+        width: 46%;
         height: 360px;
     }
 
@@ -833,6 +897,24 @@ hr {
         }
     }
 }
+
+@include lg {
+    .how_it_works {
+        .wrap {
+            margin-top: 32px;
+            margin-left: 5px;
+            margin-right: 5px;
+            max-width: 95%;
+            flex-direction: row;
+        }
+
+        .how_it_works__panel {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
 //**********************************************************  SECTION PRICING PAGE  **************************************************************
 
 .price__section {
@@ -859,14 +941,21 @@ hr {
 @include md {
     .price__section{
         margin-top: 18px;
-        height: 1650px; 
-        // !!!!
+        height: 1650px;
 
         .wrap {
             flex-direction: column;
             padding-top: 250px;
         }
     }  
+}
+
+@include lg {
+    .price__section{
+        .wrap {
+            width: 98%;
+        }
+    } 
 }
 
 //*************************************************************  SECTION PROMO PAGE  ******************************************************************
@@ -985,6 +1074,14 @@ hr {
                 margin-top: 36px;
                 margin-left: 36%;
             }
+        }
+    }
+}
+
+@include lg {
+    .promo {        
+        .block {
+            width: 95%;
         }
     }
 }
