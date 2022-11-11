@@ -22,6 +22,6 @@ export class GsSendPlanComponent implements OnInit {
 
   showlogin() {
     this.modalDialog.isShowModalGetStartedSendPlan = false;
-    this.modalDialog.isShowLogin = true
+    this.modalDialog.isShowLogin = true;
   }
 }

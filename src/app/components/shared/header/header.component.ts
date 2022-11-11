@@ -14,8 +14,8 @@ export class HeaderComponent implements OnInit {
   }
 
   showLogin() {
-    this.modalDialog.isShowLogin = true
     this.modalDialog.isSHowPersonalCabinet = true;
+    this.modalDialog.isShowLogin = true;
     document.body.style.overflow = 'hidden';
   }
 

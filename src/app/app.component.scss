@@ -253,17 +253,25 @@ hr {
     
         .start__dashboard {
             margin-top: 20px;
-            margin-left: 5px;
+            margin-left: 10px;
             width: 100%;
             img {
-                max-width: 100%;
+                max-width: 98%;
             }
 
             .start__loader {
                 left: 2%;
-                img {
-                    max-width: 100px;
-                }
+                max-width: 110px;
+                max-height: 110px;
+            }
+
+            .frame {
+                top: -130%;
+                left: -130%;
+                width: 200;
+                height: 200;
+                 margin-top: 0px; 
+                 margin-left: 0px;
             }
 
             .dashboard__message {
@@ -437,14 +445,17 @@ hr {
         .tiny__wrap {
             max-width: 100%;
             margin: 0 auto;
+            margin-left: 15px;
         }
     
         .wrap {
             max-width: 100%;
+            margin-left: 15px;
         }
     
         .dashboard__panel {
             margin-bottom: 15px;
+            margin-right: 10px;
             
             width: 50%;
             height: 300px;
@@ -544,12 +555,14 @@ hr {
     
         .wrap {
             margin-top: 32px;
+            margin-left: 15px;
+            margin-right: 5px;
             max-width: 100%;
             flex-direction: row;
         }
     
         .how_it_works__panel {
-            width: 50%;
+            width: 47%;
             height: 100%;
 
             img {

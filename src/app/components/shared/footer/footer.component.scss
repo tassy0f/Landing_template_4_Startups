@@ -2,10 +2,9 @@
 //*********************************************************************  FOOTER  **********************************************************************
 footer {
     width: 100%;
-    height: 120px;
     background: rgba(22, 32, 68, 1);
     
-    .wrap {
+    .wrap { 
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -35,6 +34,33 @@ footer {
 }
 
 @include xs {
+    footer {
+        height: 80px;
+        
+        .wrap {
+            padding-top: 30px;
+            padding-bottom: 0px;
+        }
+    
+        .bio__links ul {    
+            li {
+                margin-right: 5px;
+            }
+        }
+    
+        .terms__etc a {
+            display: block;
+            @include fontFamily('Sora', normal, 400, 10px, 20px);
+            margin-right: 16px;
+        }
+    
+        .copyright {
+            @include fontFamily('Sora', normal, 400, 10px, 20px);
+        }
+    }
+}
+
+@include sm {
     footer {
         height: 80px;
         
