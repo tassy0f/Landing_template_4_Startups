@@ -86,3 +86,9 @@ body {
         margin-top: 15px;
     }
 }
+
+@include md {
+    .wrap {
+        max-width: 920px;
+    } 
+}

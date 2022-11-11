@@ -28,13 +28,13 @@ $breakpoints: (
 }
 
 @mixin md {
-    @media (max-width: map-get($breakpoints, "md")){
+    @media (max-width: map-get($breakpoints, "md")) and (min-width: map-get($breakpoints, "sm")){
         @content;
     }
 }
 
 @mixin lg {
-    @media (max-width: map-get($breakpoints, "lg")){
+    @media (max-width: map-get($breakpoints, "lg"))  and (min-width: map-get($breakpoints, "md")){
         @content;
     }
 }

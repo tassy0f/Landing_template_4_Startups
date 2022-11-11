@@ -17,7 +17,7 @@ export class GsSendPlanComponent implements OnInit {
 
   closeWindow() {
     this.modalDialog.isShowModalGetStartedSendPlan = false;
-    document.body.style.overflow = 'visible';
+    document.body.style.overflowY = 'visible';
   }
 
   showlogin() {

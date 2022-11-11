@@ -135,6 +135,10 @@
             @include fontFamily('Sora', normal, 600, 24px, 32px);
             text-align: center;
         }
+
+        .sm_display {
+            display: none;
+        }
           
         @keyframes smal {
           from {
@@ -154,24 +158,14 @@
               }
           }
 
-          @keyframes big {
+        @keyframes big {
             from {
                 stroke-dashoffset: 326.56;
               }
               to {
                 stroke-dashoffset: 100;
               }
-          }
-          
-        @keyframes appear {
-              0%, 50% {
-                  opacity: 0;
-              }
-              100% {
-                  opacity: 1;
-              }
         }
-          
     }
 
     .companies__list {
@@ -238,7 +232,7 @@ hr {
             width: 100%;
         }
 
-        height: 782px;
+        height: 100%;
     
         .start__text {
             @include fontFamily('Sora', normal, 700, 55px, 60px);
@@ -261,29 +255,208 @@ hr {
 
             .start__loader {
                 left: 2%;
-                max-width: 110px;
-                max-height: 110px;
+                max-width: 13%;
+                max-height: 21%;
             }
 
             .frame {
-                top: -130%;
-                left: -130%;
-                width: 200;
-                height: 200;
-                 margin-top: 0px; 
-                 margin-left: 0px;
-            }
-
-            .dashboard__message {
-                left: 21%;
-                img {
-                    max-width: 105%;
+                
+                .sm_display {
+                    display: block;
                 }
+
+                .big_display {
+                    display: none;
+                }
+
+                .circle-big .text {
+                    top: 40px;
+                    @include fontFamily('Sora', normal, 600, 14px, 32px);
+                }
+
+                .circle-big {
+                    width: 114px;
+                    height: 117px;
+                }
+                  
+                .circle-big .bg {
+                    stroke-width: 6px;
+                }
+                  
+                .circle-big .progress_1 {
+                    stroke-width: 5px;
+                    stroke-dasharray: 140;
+                    stroke-dashoffset: 40;
+                    animation: big_1 1.5s ease-in-out;
+                }
+        
+                .circle-big .progress_2 {
+                    stroke-width: 5px;
+                    stroke-dasharray: 140;
+                    stroke-dashoffset: 60;
+                    animation: midle_1 1.5s ease-in-out;
+                }
+        
+                .circle-big .progress_3 {
+                    stroke-width: 5px;
+                    stroke-dasharray: 140;
+                    stroke-dashoffset: 80;
+                    animation: smal_1 1.5s ease-in-out;
+                }
+
+                @keyframes smal_1 {
+                    from {
+                        stroke-dashoffset: 140;
+                      }
+                      to {
+                        stroke-dashoffset: 80;
+                      }
+                  }
+          
+                  @keyframes midle_1 {
+                      from {
+                          stroke-dashoffset: 140;
+                        }
+                        to {
+                          stroke-dashoffset: 60;
+                        }
+                    }
+          
+                  @keyframes big_1 {
+                      from {
+                          stroke-dashoffset: 140;
+                        }
+                        to {
+                          stroke-dashoffset: 40;
+                        }
+                  }
             }
         }
     
         .companies__list {
+            width: 99%;
+            margin-top: 36px;
+            img {
+                width: 58px;
+                margin-left: 5px;
+            }
+        }
+    }
+    
+    hr {
+        width: 100%;
+    }
+}
+
+@include md {
+    .start__page {
+        height: 100%;
+
+        .wrap {
             width: 100%;
+        }
+    
+        .start__text {
+            @include fontFamily('Sora', normal, 700, 55px, 60px);
+            margin-top: 12px;
+            margin-left: 10px;
+        }
+    
+        .start__description {
+            margin-top: 13px;
+            margin-left: 15px;
+        }
+    
+        .start__dashboard {
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 100%;
+            img {
+                max-width: 98%;
+            }
+
+            .start__loader {
+                left: 2%;
+                max-width: 13%;
+                max-height: 21%;
+            }
+
+            .frame {
+                
+                .sm_display {
+                    display: block;
+                }
+
+                .big_display {
+                    display: none;
+                }
+
+                .circle-big .text {
+                    top: 40px;
+                    @include fontFamily('Sora', normal, 600, 11px, 32px);
+                }
+
+                .circle-big {
+                    width: 114px;
+                    height: 117px;
+                }
+                  
+                .circle-big .bg {
+                    stroke-width: 6px;
+                }
+                  
+                .circle-big .progress_1 {
+                    stroke-width: 5px;
+                    stroke-dasharray: 140;
+                    stroke-dashoffset: 40;
+                    animation: big_1 1.5s ease-in-out;
+                }
+        
+                .circle-big .progress_2 {
+                    stroke-width: 5px;
+                    stroke-dasharray: 140;
+                    stroke-dashoffset: 60;
+                    animation: midle_1 1.5s ease-in-out;
+                }
+        
+                .circle-big .progress_3 {
+                    stroke-width: 5px;
+                    stroke-dasharray: 140;
+                    stroke-dashoffset: 80;
+                    animation: smal_1 1.5s ease-in-out;
+                }
+
+                @keyframes smal_1 {
+                    from {
+                        stroke-dashoffset: 140;
+                      }
+                      to {
+                        stroke-dashoffset: 80;
+                      }
+                  }
+          
+                  @keyframes midle_1 {
+                      from {
+                          stroke-dashoffset: 140;
+                        }
+                        to {
+                          stroke-dashoffset: 60;
+                        }
+                    }
+          
+                  @keyframes big_1 {
+                      from {
+                          stroke-dashoffset: 140;
+                        }
+                        to {
+                          stroke-dashoffset: 40;
+                        }
+                  }
+            }
+        }
+    
+        .companies__list {
+            width: 99%;
             margin-top: 36px;
             img {
                 width: 58px;
@@ -370,6 +543,11 @@ hr {
         background: rgba(0, 89, 247, 1);
         border-radius: 24px;
         text-align: center;
+        box-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 0.4);
+
+        &:hover {
+            background: rgba(0, 89, 247, 0.9);
+        }
     }
 }
 
@@ -470,6 +648,39 @@ hr {
     
     .site__author {
         margin-top: 18px;
+    }
+}
+
+@include md {
+    .features {
+        width: 100%;
+        margin-top: 45px;
+        margin-left: 10px;
+
+        .features__promo {
+            width: 95%;
+            margin-left: -1%;
+            margin-top: 76px;
+            
+        }
+
+        .dashboard__panel {
+            margin-right: 5px;
+            margin-left: 5px;
+            
+            width: 45%;
+            height: 300px;
+        }
+
+        .tiny__wrap {
+            max-width: 100%;
+            margin: 0 auto;
+            margin-left: 15px;
+        }
+
+        .site__author {
+            margin-top: 40px;
+        }
     }
 }
 
@@ -586,6 +797,42 @@ hr {
     }
 }
 
+@include md {
+    .how_it_works {
+        margin-top: 18px;
+
+        .wrap {
+            margin-top: 32px;
+            margin-left: 5px;
+            margin-right: 5px;
+            max-width: 95%;
+            flex-direction: row;
+        }
+    
+        .how_it_works__panel {
+            width: 46%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 230px;
+            }
+        }
+    
+        .how_it_title__name {
+            margin-top: 0px;
+        }
+    
+        .how_it_title__description {
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .site__author {
+            margin-top: 37px;
+        }
+    }
+}
 //**********************************************************  SECTION PRICING PAGE  **************************************************************
 
 .price__section {
@@ -609,6 +856,19 @@ hr {
     }  
 }
 
+@include md {
+    .price__section{
+        margin-top: 18px;
+        height: 1650px; 
+        // !!!!
+
+        .wrap {
+            flex-direction: column;
+            padding-top: 250px;
+        }
+    }  
+}
+
 //*************************************************************  SECTION PROMO PAGE  ******************************************************************
 
 .promo {
@@ -622,6 +882,7 @@ hr {
         border-radius: 24px;
         display: flex;
         justify-content: space-around;
+        box-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 0.4);
 
         .question {
             @include fontFamily('Sora', normal, 500, 14px, 16px);
@@ -679,6 +940,35 @@ hr {
         
         .block {
             width: 100%;
+            height: 228px;
+            display: block;
+    
+            .question {
+                margin-left: 30px;
+                padding-top: 30px;
+            }
+    
+            .promo__text {
+                margin-left: 30px;
+            }
+    
+            .get_started {
+                margin-top: 36px;
+                margin-left: 36%;
+            }
+        }
+    }
+}
+
+@include md {
+    
+    .promo {
+        margin-top: 172px;
+        
+        margin-bottom: 30px;
+        
+        .block {
+            width: 95%;
             height: 228px;
             display: block;
     
