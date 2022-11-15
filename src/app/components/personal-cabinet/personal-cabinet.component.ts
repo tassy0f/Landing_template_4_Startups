@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Users } from 'src/app/models/users';
+import { MessageService } from 'src/app/services/message.service';
 import { ModalDialogService } from 'src/app/services/modal-dialog.service';
 
 @Component({
@@ -8,13 +10,20 @@ import { ModalDialogService } from 'src/app/services/modal-dialog.service';
 })
 export class PersonalCabinetComponent implements OnInit {
 
-  constructor(private readonly modalDialog:ModalDialogService) { }
+  @Input() usersInfo!: Users;
+  constructor(private readonly modalDialog:ModalDialogService, private messageServ:MessageService) { }
 
   ngOnInit(): void {
-  }
+    // this.usersInfo = this.messageServ.getMessage().subscribe()
+}
+
 
 
   closePersonalCabinet() {
     this.modalDialog.isSHowPersonalCabinet = false;
+  }
+
+  updateInfo() {
+    console.log(this.usersInfo);
   }
 }

@@ -91,7 +91,8 @@ export class AppComponent implements OnInit, AfterViewInit{
     const step = 2;
 
     
-    let e = document.querySelector("#out");let n = 0;
+    let e = elem; // для расширения метода))
+    let n = 0;
     let t = Math.round(time / (num / step));
     let interval = setInterval(() => {
       n = n + step;

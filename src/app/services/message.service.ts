@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { Rates } from '../models/rates';
+import { Users } from '../models/users';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,10 @@ export class MessageService {
 
   sendMessage(rate: Rates) {
     this.subject.next(rate)   
+  }
+
+  sendMessageUsers(info: Users) {
+    this.subject.next(info)   
   }
 
   getMessage() {

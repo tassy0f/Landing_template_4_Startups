@@ -1,5 +1,3 @@
-import { first } from "rxjs";
-
 export class Rates {
     name!:string;
     price!:number;

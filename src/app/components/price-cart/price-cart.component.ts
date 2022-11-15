@@ -17,7 +17,7 @@ export class PriceCartComponent implements OnInit {
 
   ngOnInit() {
   }
-
+ 
   modalCall(){
     this.dialog.isShowDialog = true
     this.msge.sendMessage(this.ratesListik)

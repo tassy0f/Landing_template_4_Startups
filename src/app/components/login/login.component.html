@@ -1,4 +1,4 @@
-<app-personal-cabinet *ngIf="modalDialog.isSHowPersonalCabinet"></app-personal-cabinet>
+<app-personal-cabinet *ngIf="modalDialog.isSHowPersonalCabinet" [usersInfo]="usersInfo"></app-personal-cabinet>
 <div class="modal__login">
     <div class="wrap">
         <div class="title">
@@ -11,10 +11,10 @@
     <hr/>
 
     <div class="wrap">
-        <form #loginForm="ngForm" (ngSubmit)="login()">
+        <form #loginForm="ngForm" (ngSubmit)="login()" id="login">
             <div>
-                <label for="username">Username</label>
-                <input id="username" name="username" [(ngModel)]="model.username">
+                <label for="email">Username</label>
+                <input id="email" name="email" [(ngModel)]="model.username">
             </div>
 
             <div>
