@@ -7,8 +7,10 @@
       "otchestvo": "Максимович",
       "telNumber": "89837652745",
       "password": "1234",
-      "rate": "rates",
-      "id": 1
+      "rate": 2,
+      "id": 1,
+      "startDate": "2022-03-12",
+      "endDate": "2022-12-12"
     },
     {
       "name": "adsv@mail.ru",
@@ -16,30 +18,56 @@
       "id": 2
     }
   ],
+
   "rates": [
     {
+
+      "name": "Free",
+      "price": 0,
+      "description": "LoremIpsum",
       "id": 1,
-      "layouts": 3,
-      "name": "free",
-      "tech-support": 60,
-      "host-support": 30,
-      "site-support": 30
+      "features": {
+        "0": "3 layouts to choose from",
+        "1": "30 minutes site guide",
+        "2": "1 hour of technical support per week",
+        "3": "30 minutes help with hosting",
+        "4": "domain name with prescription"
+      },
+      "tech_support": 60,
+      "host_support": 30,
+      "site_support": 30
     },
     {
+      "name": "Basic",
+      "price": 23,
+      "description": "LoremIpsum",
       "id": 2,
-      "layouts": 7,
-      "name": "basic",
-      "tech-support": 300,
-      "host-support": 120,
-      "site-support": 180
+      "features": {
+        "0": "7 layouts to choose from",
+        "1": "3 hours site guide",
+        "2": "5 hour of technical support per week",
+        "3": "2 hours help with hosting",
+        "4": "domain name without prescription"
+      },
+      "tech_support": 300,
+      "host_support": 120,
+      "site_support": 180
     },
     {
+      "name": "Premium",
+      "price": 59,
+      "description": "LoremIpsum",
       "id": 3,
-      "layouts": 12,
-      "name": "premium",
-      "tech-support": 600,
-      "host-support": 240,
-      "site-support": 480
+      "features": {
+        "0": "12 layouts to choose from",
+        "1": "7 hours site guide",
+        "2": "10 hour of technical support per week",
+        "3": "4 hours help with hosting",
+        "4": "golden domain name"
+      },
+      "tech_support": 600,
+      "host_support": 240,
+      "site_support": 480
     }
   ]
 }

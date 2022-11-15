@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Rates } from 'src/app/models/rates';
 import { Users } from 'src/app/models/users';
-import { MessageService } from 'src/app/services/message.service';
 import { ModalDialogService } from 'src/app/services/modal-dialog.service';
 
 @Component({
@@ -11,19 +11,33 @@ import { ModalDialogService } from 'src/app/services/modal-dialog.service';
 export class PersonalCabinetComponent implements OnInit {
 
   @Input() usersInfo!: Users;
-  constructor(private readonly modalDialog:ModalDialogService, private messageServ:MessageService) { }
+  rateUserInfo!: Rates
+  constructor(private readonly modalDialog:ModalDialogService) { }
 
   ngOnInit(): void {
-    // this.usersInfo = this.messageServ.getMessage().subscribe()
-}
+    this.rateload()
+  }
 
+  async rateload() {
+    let connection = fetch('http://localhost:3000/rates', {
+      method: 'GET',
+    })
+    .then(resp => {return resp.json()})
+    .then(resBody => {return resBody[this.usersInfo.rate - 1]})
 
+    let finalCon = await connection;    
+    this.rateUserInfo = finalCon
+    console.log(this.rateUserInfo);
+    
+  }
 
   closePersonalCabinet() {
     this.modalDialog.isSHowPersonalCabinet = false;
+    this.modalDialog.isShowLogin = false;
+    document.body.style.overflowY = 'visible';
   }
 
   updateInfo() {
-    console.log(this.usersInfo);
+    console.log(this.rateUserInfo);
   }
 }

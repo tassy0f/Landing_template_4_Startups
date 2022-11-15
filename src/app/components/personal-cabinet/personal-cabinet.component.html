@@ -5,7 +5,7 @@
           <p>Saflow</p>
         </div>
         <div class="header__logo">
-            <p>Roman M.</p>
+            <p>{{usersInfo.imya}} {{usersInfo.fmiliya | slice:0:1}}.</p>
             <img src="../../../assets/LK-logo.svg" class="lk_picture" alt="LK-picture || avatar">
         </div>
     </div>
@@ -17,18 +17,18 @@
         <p>Your rate plan:</p>
         <div class="user__rate__info">
             <div class="wrap">
-                <p class="rate__plan">{{"Basic"}}</p>
-                <p class="price">$<span>{{"0"}} / per. month</span></p>
+                <p class="rate__plan">{{rateUserInfo.name}}</p>
+                <p class="price">$<span>{{rateUserInfo.price}} / per. month</span></p>
             </div>
             <ul class="features__list">
-                <li>{{"rateInfo.features[0]"}}</li>
-                <li>{{"rateInfo.features[1]"}}</li>
-                <li>{{"rateInfo.features[2]"}}</li>
-                <li>{{"rateInfo.features[3]"}}</li>
-                <li>{{"rateInfo.features[4]"}}</li>
+                <li>{{rateUserInfo.features[0]}}</li>
+                <li>{{rateUserInfo.features[1]}}</li>
+                <li>{{rateUserInfo.features[2]}}</li>
+                <li>{{rateUserInfo.features[3]}}</li>
+                <li>{{rateUserInfo.features[4]}}</li>
             </ul>
             <div class="wrap">
-                <p>Your rate is active for: "$date"</p>
+                <p>Your rate is active from: {{usersInfo.endDate}}</p>
                 <button class="update__rate_button" (click)="updateInfo()">Update rate</button>
             </div>
         </div>
@@ -53,7 +53,7 @@
                 <input id="phone" type="number">
 
 
-                <label>Transaction date:  <span>"$15.09.2022""</span></label>
+                <label>Transaction date:  <span>{{usersInfo.endDate}}</span></label>
             </form>
             <button>Save Info</button>
         </div>

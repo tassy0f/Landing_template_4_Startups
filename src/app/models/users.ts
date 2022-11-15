@@ -1,5 +1,3 @@
-import { Rates } from "./rates";
-
 export class Users {
     name!: string;
     fmiliya!: string;
@@ -7,10 +5,12 @@ export class Users {
     otchestvo!: string;
     telNumber!: number;
     password!: number;
-    rate!: string;
-    id!: number
+    rate!: number;
+    id!: number;
+    startDate!: Date;
+    endDate!: Date
 
-    constructor(name: string, fmiliya: string, imya: string, otchestvo: string, telNumber: number, password: number, rate: string, id: number) {
+    constructor(name: string, fmiliya: string, imya: string, otchestvo: string, telNumber: number, password: number, rate: number, id: number, startDate: Date, endDate: Date) {
         this.name = name
         this.fmiliya = fmiliya
         this.imya = imya
@@ -19,5 +19,7 @@ export class Users {
         this.password = password
         this.rate = rate
         this.id = id
+        this.startDate = startDate
+        this.endDate = endDate
     }
 }

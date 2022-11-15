@@ -33,6 +33,7 @@ export class AppComponent implements OnInit, AfterViewInit{
       'FREE',
       0,
       'LoremIpsum*10',
+      1,
       [
         '3 layouts to choose from',
         '30 minutes site guide',
@@ -45,6 +46,7 @@ export class AppComponent implements OnInit, AfterViewInit{
       'BASIC',
       23,
       'LoremIpsum*10',
+      2,
       [
         '7 layouts to choose from',
         '3 hours site guide',
@@ -57,6 +59,7 @@ export class AppComponent implements OnInit, AfterViewInit{
       'PREMIUM',
       59,
       'LoremIpsum*10',
+      3,
       [
         '12 layouts to choose from',
         '7 hours site guide',

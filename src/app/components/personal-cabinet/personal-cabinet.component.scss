@@ -1,7 +1,9 @@
 @import '../../../assets/mixins.scss';
 
 :host {
+    margin-top: -15px;
     display: block;
+    margin-left: -16px;
     position: fixed;
     top: 0;
     left: 0;
@@ -106,7 +108,10 @@ form {
     }
 
     span {
-        @include fontFamily('Sora', normal, 400, 22px, 26px);
+        @include fontFamily('Sora', normal, 600, 24px, 28px);
+        letter-spacing: 0.05em;
+        color: rgba(0, 0,0 , 0.9);
+        margin-left: 15px;
     }
 }
 

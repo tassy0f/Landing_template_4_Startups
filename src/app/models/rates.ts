@@ -2,6 +2,7 @@ export class Rates {
     name!:string;
     price!:number;
     description!:string;
+    id!: number;
     features!:[
         first:string,
         second:string,
@@ -10,7 +11,7 @@ export class Rates {
         fifth:string
     ];
 
-    constructor(name:string, price:number = 0, description:string = ' ',  features:[string,string,string,string,string] = [' ',' ',' ',' ',' ']) {
+    constructor(name:string, price:number = 0, description:string = ' ', id:number, features:[string,string,string,string,string] = [' ',' ',' ',' ',' ']) {
         this.name = name
         this.description = description
         this.price = price
