@@ -16,12 +16,13 @@
       "name": "adsv@mail.ru",
       "password": "12345",
       "id": 2
+    },
+    {
+      "id": 3
     }
   ],
-
   "rates": [
     {
-
       "name": "Free",
       "price": 0,
       "description": "LoremIpsum",

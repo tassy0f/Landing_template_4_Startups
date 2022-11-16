@@ -45,4 +45,32 @@ export class LoginComponent implements OnInit {
     this.usersInfo = finalCon 
   }
   
+
+  async register() {
+    let connection = fetch('http://localhost:3000/users', {
+        method: "POST"
+      }).then(resp => {console.log(resp);
+      })
+
+      await connection
+  }
+
+
+  active() {
+    let activeElem:any = document.querySelector(".nonactive");
+    let nonactiveElem:any = document.querySelector(".active");
+    let visibleForm:any = document.querySelector(".disabled");
+    let hiddenForm:any = document.querySelector(".visible");
+    
+    activeElem.classList.add("active");
+    activeElem.classList.remove("nonactive");
+    nonactiveElem.classList.add("nonactive");
+    nonactiveElem.classList.remove("active");
+
+    visibleForm.classList.add("visible");
+    visibleForm.classList.remove("disabled");
+    hiddenForm.classList.add("disabled");
+    hiddenForm.classList.remove("visible");
+
+  }
 }

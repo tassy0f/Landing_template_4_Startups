@@ -26,8 +26,7 @@ export class PersonalCabinetComponent implements OnInit {
     .then(resBody => {return resBody[this.usersInfo.rate - 1]})
 
     let finalCon = await connection;    
-    this.rateUserInfo = finalCon
-    console.log(this.rateUserInfo);
+    this.rateUserInfo = finalCon;
     
   }
 

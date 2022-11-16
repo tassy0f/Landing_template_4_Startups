@@ -1,29 +1,55 @@
 <app-personal-cabinet *ngIf="modalDialog.isSHowPersonalCabinet" [usersInfo]="usersInfo"></app-personal-cabinet>
 <div class="modal__login">
-    <div class="wrap">
-        <div class="title">
-            <p>Here is Login!</p>
+    <div class="wrap__login">
+        <div class="wrap">
+            <div class="title">
+                <p class="active" (click)="active()"> Sign in </p>
+                <p class="nonactive" (click)="active()"> Sign up </p>
+            </div>
+            <div class="close__btn">
+                <img src="../../../assets/Close_icon-icons.com_71857.svg" alt="Close" (click)="closeLoginWindow()">
+            </div> 
         </div>
-        <div class="close__btn">
-            <img src="../../../assets/Close_icon-icons.com_71857.svg" alt="Close" (click)="closeLoginWindow()">
-        </div> 
-    </div>
-    <hr/>
+        <hr/>
+    
+        <div class="wrap visible">
+            <form #loginForm="ngForm" (ngSubmit)="login()" id="login">
+                <div>
+                    <span for="email">Email</span>
+                    <input id="email" name="email" class="text" [(ngModel)]="model.username">
+                </div>
+                <div>
+                    <span for="password">Password</span>
+                    <input type="password" id="password" name="password" class="text" [(ngModel)]="model.password">
+                </div>
+                <button class="signin">Login</button>
+            </form>
+        </div>
 
-    <div class="wrap">
-        <form #loginForm="ngForm" (ngSubmit)="login()" id="login">
-            <div>
-                <label for="email">Username</label>
-                <input id="email" name="email" [(ngModel)]="model.username">
-            </div>
-
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" [(ngModel)]="model.password">
-            </div>
-            <button>Login</button>
-        </form>
+        <div class="wrap disabled">
+            <form #loginForm="ngForm" (ngSubmit)="register()" id="register">
+                <div>
+                    <span for="email">Email</span>
+                    <input id="email" name="email" class="text" [(ngModel)]="model.username">
+                </div>
+                <div>
+                    <span for="password">Password</span>
+                    <input type="password" id="password" name="password" class="text" [(ngModel)]="model.password">
+                </div>
+                <div>
+                    <span for="password">Password</span>
+                    <input type="password" id="password" name="password" class="text" [(ngModel)]="model.password">
+                </div>
+                <div>
+                    <span for="password">Password</span>
+                    <input type="password" id="password" name="password" class="text" [(ngModel)]="model.password">
+                </div>
+                <div>
+                    <span for="password">Password</span>
+                    <input type="password" id="password" name="password" class="text" [(ngModel)]="model.password">
+                </div>
+                <button class="signin">Login</button>
+            </form>
+        </div>
     </div>
 </div>
-
-
