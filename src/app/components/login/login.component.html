@@ -29,26 +29,26 @@
         <div class="wrap disabled">
             <form #loginForm="ngForm" (ngSubmit)="register()" id="register">
                 <div>
-                    <span for="email">Email</span>
+                    <span for="name">Name</span>
+                    <input id="name" name="name" class="text" [(ngModel)]="model.name">
+                </div>
+                <div>
+                    <span for="surname">Surname</span>
+                    <input id="surname" name="surname" class="text" [(ngModel)]="model.surname">
+                </div>
+                <div>
+                    <span for="telefon">Telefon</span>
+                    <input id="telefon" name="telefon" class="text" [(ngModel)]="model.telefon">
+                </div>
+                <div>
+                    <span for="email">E-mail</span>
                     <input id="email" name="email" class="text" [(ngModel)]="model.username">
                 </div>
                 <div>
                     <span for="password">Password</span>
                     <input type="password" id="password" name="password" class="text" [(ngModel)]="model.password">
                 </div>
-                <div>
-                    <span for="password">Password</span>
-                    <input type="password" id="password" name="password" class="text" [(ngModel)]="model.password">
-                </div>
-                <div>
-                    <span for="password">Password</span>
-                    <input type="password" id="password" name="password" class="text" [(ngModel)]="model.password">
-                </div>
-                <div>
-                    <span for="password">Password</span>
-                    <input type="password" id="password" name="password" class="text" [(ngModel)]="model.password">
-                </div>
-                <button class="signin">Login</button>
+                <button class="signin">Register</button>
             </form>
         </div>
     </div>

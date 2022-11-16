@@ -72,5 +72,7 @@ export class LoginComponent implements OnInit {
     hiddenForm.classList.add("disabled");
     hiddenForm.classList.remove("visible");
 
+    
+
   }
 }
