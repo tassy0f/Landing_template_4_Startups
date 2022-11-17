@@ -1,5 +1,5 @@
 export class Users {
-    name!: string;
+    email!: string;
     fmiliya!: string;
     imya!: string;
     otchestvo!: string;
@@ -10,8 +10,8 @@ export class Users {
     startDate!: Date;
     endDate!: Date
 
-    constructor(name: string, fmiliya: string, imya: string, otchestvo: string, telNumber: number, password: number, rate: number, id: number, startDate: Date, endDate: Date) {
-        this.name = name
+    constructor(email: string, fmiliya: string, imya: string, otchestvo: string, telNumber: number, password: number, rate: number, id: number, startDate: Date, endDate: Date) {
+        this.email = email
         this.fmiliya = fmiliya
         this.imya = imya
         this.otchestvo = otchestvo

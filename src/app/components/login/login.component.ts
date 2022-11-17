@@ -14,8 +14,13 @@ export class LoginComponent implements OnInit {
 
   constructor(readonly modalDialog:ModalDialogService) { }
 
-  model: any = {}
+  startDate:any = new Date
+  model: any = {
+    "rate": 1,
+    "startDate": this.startDate.toISOString().slice(0,10),
+  }
   userPrim: any
+  
 
 
   ngOnInit(): void {
@@ -32,10 +37,10 @@ export class LoginComponent implements OnInit {
       })
       .then(resp => {return resp.json()})
       .then(resBody => {
-        let userId = resBody.find((user: { name: string; }) => user.name === this.model.username).id
+        let userId = resBody.find((user: { email: string; }) => user.email === this.model.email).id
         this.userPrim = resBody[userId - 1]
         
-        if(this.userPrim.password == this.model.password) {
+        if(this.userPrim.password == this.model.password && this.userPrim.email == this.model.email) {
           this.modalDialog.isSHowPersonalCabinet = true
         }
         return this.userPrim
@@ -47,12 +52,15 @@ export class LoginComponent implements OnInit {
   
 
   async register() {
-    let connection = fetch('http://localhost:3000/users', {
-        method: "POST"
-      }).then(resp => {console.log(resp);
-      })
+    let connection = await fetch('http://localhost:3000/users', {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8'
+        },
+        body:JSON.stringify(this.model)
+    })
 
-      await connection
+      this.login();
   }
 
 

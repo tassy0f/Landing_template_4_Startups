@@ -14,6 +14,31 @@
 
 <div class="wrap">
     <div class="user__info__div">
+        <p>Your Personal data: </p>
+        <div class="user__info">
+            <form>
+                <label for="name">Name: <span>{{usersInfo.imya}}</span></label>
+                <input id="name" type="text">
+
+                <label for="sname">Surname: <span>{{usersInfo.fmiliya}}</span></label>
+                <input id="sname" type="text">
+
+                <label for="email">E-mail: <span>{{usersInfo.email}}</span></label>
+                <input id="email" type="email">
+
+                <label for="phone">Mobile phone: <span>{{usersInfo.telNumber}}</span></label>
+                <input id="phone" type="number">
+
+
+                <label>Transaction date:  <span>{{usersInfo.endDate}}</span></label>
+            </form>
+            <button>Save Info</button>
+        </div>
+    </div>
+</div>
+
+<div class="wrap">
+    <div class="user__info__div">
         <p>Your rate plan:</p>
         <div class="user__rate__info">
             <div class="wrap">
@@ -28,34 +53,9 @@
                 <li>{{rateUserInfo.features[4]}}</li>
             </ul>
             <div class="wrap">
-                <p>Your rate is active from: {{usersInfo.endDate}}</p>
+                <p>Your rate is active from: {{usersInfo.startDate}}</p>
                 <button class="update__rate_button" (click)="updateInfo()">Update rate</button>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="wrap">
-    <div class="user__info__div">
-        <p>Your Personal data: </p>
-        <div class="user__info">
-            <form>
-                <label for="name">Name: <span>{{usersInfo.imya}}</span></label>
-                <input id="name" type="text">
-
-                <label for="sname">Surname: <span>{{usersInfo.fmiliya}}</span></label>
-                <input id="sname" type="text">
-
-                <label for="email">E-mail: <span>{{usersInfo.name}}</span></label>
-                <input id="email" type="email">
-
-                <label for="phone">Mobile phone: <span>{{usersInfo.telNumber}}</span></label>
-                <input id="phone" type="number">
-
-
-                <label>Transaction date:  <span>{{usersInfo.endDate}}</span></label>
-            </form>
-            <button>Save Info</button>
         </div>
     </div>
 </div>

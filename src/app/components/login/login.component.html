@@ -16,7 +16,7 @@
             <form #loginForm="ngForm" (ngSubmit)="login()" id="login">
                 <div>
                     <span for="email">Email</span>
-                    <input id="email" name="email" class="text" [(ngModel)]="model.username">
+                    <input id="email" name="email" class="text" [(ngModel)]="model.email">
                 </div>
                 <div>
                     <span for="password">Password</span>
@@ -29,24 +29,24 @@
         <div class="wrap disabled">
             <form #loginForm="ngForm" (ngSubmit)="register()" id="register">
                 <div>
-                    <span for="name">Name</span>
-                    <input id="name" name="name" class="text" [(ngModel)]="model.name">
+                    <span for="imya">Name</span>
+                    <input id="imya" name="imya" class="text" [(ngModel)]="model.imya">
                 </div>
                 <div>
-                    <span for="surname">Surname</span>
-                    <input id="surname" name="surname" class="text" [(ngModel)]="model.surname">
+                    <span for="fmiliya">Surname</span>
+                    <input id="fmiliya" name="fmiliya" class="text" [(ngModel)]="model.fmiliya">
                 </div>
                 <div>
-                    <span for="telefon">Telefon</span>
-                    <input id="telefon" name="telefon" class="text" [(ngModel)]="model.telefon">
+                    <span for="telNumber">Telefon</span>
+                    <input id="telNumber" name="telNumber" class="text" [(ngModel)]="model.telNumber">
                 </div>
                 <div>
                     <span for="email">E-mail</span>
-                    <input id="email" name="email" class="text" [(ngModel)]="model.username">
+                    <input name="email" class="text" [(ngModel)]="model.email">
                 </div>
                 <div>
                     <span for="password">Password</span>
-                    <input type="password" id="password" name="password" class="text" [(ngModel)]="model.password">
+                    <input type="password" name="password" class="text" [(ngModel)]="model.password">
                 </div>
                 <button class="signin">Register</button>
             </form>
