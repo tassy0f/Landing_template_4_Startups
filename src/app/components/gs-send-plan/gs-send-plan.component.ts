@@ -7,7 +7,7 @@ import { ModalDialogService } from 'src/app/services/modal-dialog.service';
   styleUrls: ['./gs-send-plan.component.scss']
 })
 export class GsSendPlanComponent implements OnInit {
-  public isEmailVisible = false;
+  public isEmailVisible = true;
 
   constructor(private readonly modalDialog:ModalDialogService) { }
 

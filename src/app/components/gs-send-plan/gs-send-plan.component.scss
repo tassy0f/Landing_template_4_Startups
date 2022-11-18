@@ -16,10 +16,11 @@
 .modal__get-started {
     margin: 100px auto;
     width: 40%;
-    height: 450px;
+    height: 70%;
     background: rgba(7, 14, 39, 1);
     border-radius: 24px;
     text-align: center;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgb(0 0 0 / 40%);
 }
 
 .wrap {
@@ -28,11 +29,18 @@
     justify-content: space-between;
 }
 
+.second {
+    display: block;
+}
+
 .title {
     text-align: left;
-    @include fontFamily('Sora', normal, 600, 42px, 75px);
-    letter-spacing: -0.04em;
+    @include fontFamily('Sora', normal, 100, 22px, 75px);
     color: #fff;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    text-transform: uppercase; 
 }
 
 hr {
@@ -48,66 +56,101 @@ hr {
     text-align: left;
     margin-top: 5%;
     margin-left: 5%;
-    @include fontFamily('Sora', normal, 400, 20px, 30px);
+    @include fontFamily('Sora', normal, 100, 20px, 30px);
     letter-spacing: -0.04em;
     color: #CCD2E9;
 }
 
 .actions__buttons {
-    max-width: 400px;
-    margin-top: 5%;
-    margin-left: -3%;
+    max-width: 97%;
     display: flex;
     justify-content: space-between;
-}
+    margin-top: -10%;
 
-.get_started {
-    margin-left: 20px;
-    width: 175px;
-    height: 52px;
+    .get_started {
+        background-color: #1161ed;
+        color: #FFF;
+        width: 40%;
+        padding: 10px 20px;
+        display: block;
+        height: 39px;
+        border-radius: 20px;
+        margin-top: 17%;
+        margin-left: 3%;
+        transition: all 0.5s ease-in-out;
+        border: none;
+        text-transform: uppercase;
+        @include fontFamily('Sora', normal, 100, 18px, 21px);
+    
+        &:hover {
+            background: #4082f5;
+            box-shadow: 0px 4px 35px -5px #4082f5;
+            cursor: pointer;
+        }
+    
+        &:focus {
+            outline: none;
+        }
+    }
 }
 
 .email__input {
-
+    width: 90%;
     p {
         text-align: left;
-        @include fontFamily('Sora', normal, 400, 21px, 16px);
-        letter-spacing: -0.04em;
-        color: #CCD2E9;
+        font-size: 18px;
+        opacity: 0.4; 
+        color: #fff;
+        display: inline-block;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        margin-left: -86%;
+    }
+      
+    .text {
+        border: none;
+        width: 89%;
+        padding: 10px 10px;
+        display: block;
+        height: 15px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0);
+        overflow: hidden;
+        margin-top: 15px;
+        transition: all 0.5s ease-in-out;
+    }
+      
+    .text:focus {
+        outline: 0;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0);
+    }
+      
+    .text:focus + p {
+        opacity: 0.6;
     }
 
     input {
-        margin-top: 10px;
-        margin-left: -3%;
-        @include fontFamily('Sora', normal, 400, 26px, 32px);
-        letter-spacing: -0.04em;
-        color: #CCD2E9;
-        
-        border: 1px #4E5A85 solid;
-        border-radius: 10px;
-    }
-
-    .get_started {
-        background: #31c538;
-        margin-top: 8px;
-        margin-left: -1%;
-        display: block;
-    }
+        display: inline-block;
+        padding-top: 20px;
+        @include fontFamily('Sora', normal, 400, 14px, 28px);
+        color: #fff;
+    }   
 }
+
+
 
 @include xs {
     .modal__get-started {
         width: 90%;
-        height: 515px;
-        border-radius: 14px;
+        height: auto;
+        border-radius: 22px;
         margin-left: -5px;
 
         .get_started {
-            margin-top: 50px;
-            margin-left: 20px;
-            width: 120px;
-            height: 46px;
-            @include fontFamily('Sora', normal, 400, 14px, 20px);
+            @include fontFamily('Sora', normal, 100, 10px, 20px);
         }
     }
 
@@ -116,7 +159,11 @@ hr {
     }
     
     .wrap {
-        width: 85%;
+
+        .close__btn {
+            width: 6%;
+            margin-top: -5%;
+        }
     }
     
     hr {
@@ -124,7 +171,8 @@ hr {
     }
 
     .title {
-        @include fontFamily('Sora', normal, 600, 36px, 60px);
+        font-size: 20px;
+        line-height: 24px;
     }
     
     .middle__text {
@@ -133,28 +181,79 @@ hr {
     }
     
     .actions__buttons {
-        max-width: 90%;
-        margin-top: -9%;
-        margin-left: 0%;
-    }
-    
-    .email__input {
-    
-        p {
-            @include fontFamily('Sora', normal, 400, 19px, 13px);
-            margin-left: -4%;
-        }
-    
-        input {
-            margin-left: -5%;
-            @include fontFamily('Sora', normal, 400, 26px, 28px);
-            border-radius: 8px;
-        }
-    
+        max-width: 97%;
+        margin-top: 3%;
+        margin-left: 5%;
+        padding-bottom: 30px;
+
         .get_started {
-            background: #249229;
             margin-left: -5%;
             margin-top: 12px;
         }
+    }
+    
+    .email__input {
+        p {
+            font-size: 20px;
+            margin-left: -83%;
+        }
+    }
+}
+
+@include sm {
+    .modal__get-started {
+        width: 90%;
+    } 
+
+    .wrap {
+        padding-top: 15px;
+    }
+
+    .middle__text {
+        font-size: 17px;
+    }
+}
+
+@include md {
+    .modal__get-started {
+        width: 75%;
+    } 
+
+    .wrap {
+        padding-top: 15px;
+    }
+
+    .middle__text {
+        font-size: 17px;
+    }
+}
+
+@include lg {
+    .modal__get-started {
+        width: 40%;
+        height: 65%;
+    } 
+
+    .wrap {
+        padding-top: 15px;
+    }
+
+    .middle__text {
+        font-size: 17px;
+    }
+}
+
+@include xl {
+    .modal__get-started {
+        width: 40%;
+        height: 68%;
+    } 
+
+    .wrap {
+        padding-top: 15px;
+    }
+
+    .middle__text {
+        font-size: 17px;
     }
 }

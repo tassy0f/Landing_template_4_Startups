@@ -52,6 +52,7 @@ body {
     background: #689EFF;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
     // box-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 0.5);
 
     @include fontFamily('Sora', normal, 500, 16px, 24px);

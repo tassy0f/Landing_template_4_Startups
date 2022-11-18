@@ -696,6 +696,17 @@ hr {
         }
     
         .dashboard__panel {
+
+            .name__panel {
+                padding-top: 5px;
+            }
+
+            .description__panel {
+                padding-left: 18px;
+                padding-top: 10px;
+                font-size: 12px;
+            }
+
             margin-bottom: 15px;
             margin-right: 10px;
             
@@ -826,7 +837,7 @@ hr {
 @include sm {
     .how_it_works {
         margin-top: 18px;
-        height: 930px;
+        height: 100%;
     
         .wrap {
             margin-top: 32px;
@@ -1039,6 +1050,7 @@ hr {
     
             .promo__text {
                 margin-left: 30px;
+                font-size: 28px;
             }
     
             .get_started {

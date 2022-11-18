@@ -1,32 +1,39 @@
 <div class="modal__get-started">
-    <div class="wrap">
-        <div class="title">
-            <p>Choose your rate!</p>
+    <div class="wrap__get-started">
+        <div class="wrap">
+            <div class="title">
+                <p>Choose your rate!</p>
+            </div>
+            <div class="close__btn">
+                <img src="../../../assets/Close_icon-icons.com_71857.svg" alt="Close" (click)="closeWindow()">
+            </div> 
         </div>
-        <div class="close__btn">
-            <img src="../../../assets/Close_icon-icons.com_71857.svg" alt="Close" (click)="closeWindow()">
-        </div> 
-    </div>
-    <hr/>
-    <div class="middle__text">
-        <p>
-            Lorem ipsum dolor sit amet, 
-            consectetur adipisicing elit. 
-            Fugiat eos ipsa voluptate, nobis 
-            cumque quos sed, omnis, rerum velit 
-            dicta vero minima debitis corporis 
-            incidunt sapiente explicabo deserunt quia veniam.
-        </p>
-    </div>
-    <div class="wrap btns">
-        <div class="email__input" *ngIf="isEmailVisible">
-            <p>E-mail:</p>
-            <input type="email" id="Email" placeholder="name@example.com">
-            <button class="get_started">Send</button>
+        <hr/>
+        <div class="middle__text">
+            <p>
+                We offer a modern online IT service. 
+                With our help, you can create your own website in minutes. 
+                Thanks to our technical support, setting up and organizing 
+                the whole process will not take much time. There are three 
+                tariffs on our website for your future success. 
+                We can send a letter with more detailed information to your 
+                mailbox or you can enter your personal account and get to know them better.
+            </p>
+            <p>The choice is yours!</p>
         </div>
-        <div class="actions__buttons">
-            <button class="get_started" (click)="showlogin()">Sign In</button>
-            <button class="get_started" (click)="isEmailVisible = true">Send for      E-mail</button>
+        <div class="wrap second btns">
+            <div class="email__input" *ngIf="isEmailVisible">
+                <p>E-mail:</p>
+                <input type="email" id="Email" class="text">
+            </div>
+            <div class="actions__buttons">
+                <button class="get_started">Send</button>
+                <button class="get_started" (click)="showlogin()">Sign In</button>
+            </div>
+            <!-- <div class="actions__buttons">
+                
+                <button class="get_started" (click)="isEmailVisible = true">Send for      E-mail</button>
+            </div> -->
         </div>
     </div>
 </div>
