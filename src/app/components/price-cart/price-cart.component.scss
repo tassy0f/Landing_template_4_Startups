@@ -43,17 +43,18 @@
 
 @include xs {
     .price__cart {
-        margin-left: 20px;
+        margin-left: 5px;
         margin-top: 22px;
-        width: 350px;
-        height: 630px;
+        width: 98%;
+        height: auto;
+        padding-bottom: 20px;
 
         &:hover {
             margin-top: 22px;
         }
     
         hr {
-            width: 254px; 
+            width: 76%; 
         }
     
         .get_started {

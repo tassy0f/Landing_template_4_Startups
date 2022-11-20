@@ -192,7 +192,7 @@ hr {
     }
 
     .start__page {
-        height: 515px;
+        height: auto;
     
         .start__text {
             @include fontFamily('Sora', normal, 700, 55px, 66px);
@@ -214,7 +214,7 @@ hr {
             width: 100%;
             margin-top: 36px;
             img {
-                width: 58px;
+                width: 90%;
                 margin-left: 5px;
             }
         }
@@ -548,7 +548,7 @@ hr {
     .__description {
         margin-top: 16px;
         margin-bottom: 32px;
-        width: 400px;
+        width: 95%;
         @include fontFamily('Sora', normal, 400, 20px, 32px);
         letter-spacing: -0.02em;
         color: rgba(126, 139, 182, 1);
@@ -668,7 +668,7 @@ hr {
     
         .features__promo {
             margin-top: 870px;
-            width: 370px;
+            width: 100%;
             height: 328px;
         }
     }
@@ -810,12 +810,12 @@ hr {
         }
     
         .how_it_works__panel {
-            width: 370px;
+            width: 98%;
             height: 230px;
             margin-left: 10px;
 
             img {
-                width: 370px;
+                width: 98%;
             }
         }
     
@@ -829,7 +829,7 @@ hr {
         }
 
         .site__author {
-            margin-top: 167px;
+            margin-top: 200px;
         }
     }
 }
@@ -1007,12 +1007,11 @@ hr {
 
 @include xs {
     .promo {
-        margin-top: 172px;
         margin-left: 15px;
         margin-bottom: 20px;
         
         .block {
-            width: 350px;
+            width: 96%;
             height: 328px;
             display: block;
     

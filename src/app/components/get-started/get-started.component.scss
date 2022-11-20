@@ -109,7 +109,8 @@
 
     .modal__get-started {
         width: 90%;
-        height: 425px;
+        height: auto;
+        padding-bottom: 25px;
         border-radius: 14px;
         margin-left: -5px;
     }
@@ -177,6 +178,193 @@
             &:active {
                 background: rgb(66, 133, 250);
             }
+        }
+    }
+}
+
+@include sm {
+
+    .non_flex {
+        display: block;
+    }
+
+    .modal__get-started {
+        width: 90%;
+        height: auto;
+        padding-bottom: 25px;
+        border-radius: 14px;
+        margin-left: -5px;
+    }
+    
+    .tarifs__ul {
+        margin-left: 40px;
+        height: 11%;
+        width: 90%;
+        padding-top: 32px; 
+    
+        .wrap {
+            justify-content: space-between;
+        }
+    
+        img {
+            width: 24px;
+            margin-right: 12px;
+        }
+    
+        p {
+            @include fontFamily('Sora', normal, 600, 21px, 37px);
+        }
+        
+        hr {
+            width: 93.5%;
+        }
+    }
+    
+    .modal__price {
+    
+        .price {
+            @include fontFamily('Sora', normal, 600, 29px, 25px);
+        }
+
+        .email__input {
+            padding-top: 20px;
+    
+            p {
+                @include fontFamily('Sora', normal, 400, 19px, 12px);
+            }
+    
+            input {
+                @include fontFamily('Sora', normal, 400, 14px, 20px);
+                border-radius: 8px;
+            }
+        }
+    
+        .features__list {
+            margin-top: 17px;
+
+            li {
+                margin-left: 12px;
+                margin-bottom: 12px;
+                @include fontFamily('Sora', normal, 400, 14px, 24px);
+            }
+        }
+    
+        button {
+            width: 150px;
+            height: 42px;
+            margin-top: 2%;
+            margin-left: 10%;
+            @include fontFamily('Sora', normal, 500, 14px, 24px);
+    
+            &:active {
+                background: rgb(66, 133, 250);
+            }
+        }
+    }
+}
+
+@include md {
+
+    .non_flex {
+        display: block;
+    }
+
+    .modal__get-started {
+        width: 85%;
+        height: auto;
+        padding-bottom: 25px;
+        border-radius: 14px;
+    }
+    
+    .tarifs__ul {
+        margin-left: 40px;
+        height: 11%;
+        width: 95%;
+        padding-top: 32px; 
+    
+        .wrap {
+            justify-content: space-between;
+        }
+    
+        img {
+            width: 24px;
+            margin-right: 12px;
+        }
+    
+        p {
+            @include fontFamily('Sora', normal, 600, 21px, 37px);
+        }
+        
+        hr {
+            width: 93.5%;
+        }
+    }
+    
+    .modal__price {
+    
+        .price {
+            @include fontFamily('Sora', normal, 600, 29px, 25px);
+        }
+
+        .email__input {
+            padding-top: 20px;
+    
+            p {
+                @include fontFamily('Sora', normal, 400, 19px, 12px);
+            }
+    
+            input {
+                @include fontFamily('Sora', normal, 400, 14px, 20px);
+                border-radius: 8px;
+            }
+        }
+    
+        .features__list {
+            margin-top: 17px;
+
+            li {
+                @include fontFamily('Sora', normal, 400, 14px, 24px);
+            }
+        }
+    
+        button {
+            width: 150px;
+            height: 42px;
+            margin-top: 2%;
+            margin-left: 10%;
+            @include fontFamily('Sora', normal, 500, 14px, 24px);
+    
+            &:active {
+                background: rgb(66, 133, 250);
+            }
+        }
+    }
+}
+
+@include lg {
+
+    .modal__get-started {
+        width: 60%;
+        height: auto;
+        padding-bottom: 25px;
+        border-radius: 14px;
+    }
+
+    .features__list {
+        text-align: left;
+        margin-left: -5%;
+        height: auto;
+    }
+    
+    button {
+        width: 150px;
+        height: 42px;
+        margin-top: 2%;
+        margin-left: 10%;
+        @include fontFamily('Sora', normal, 500, 14px, 24px);
+    
+        &:active {
+            background: rgb(66, 133, 250);
         }
     }
 }
