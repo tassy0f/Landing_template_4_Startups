@@ -46,6 +46,26 @@
       "fmiliya": "Avdeev",
       "telNumber": "89005553535",
       "id": 5
+    },
+    {
+      "rate": 1,
+      "startDate": "2022-12-30",
+      "email": "11@nrt.ru",
+      "password": "<script>alert(\"test\")</script>",
+      "imya": "<script>alert(\"test\")</script>",
+      "fmiliya": "<script>alert(\"test\")</script>",
+      "telNumber": "<script>alert(\"test\")</script>",
+      "id": 6
+    },
+    {
+      "rate": 1,
+      "startDate": "2022-12-30",
+      "email": "<<script>alert('test')</script>ipt>alert(\\\"test\\\")</script>",
+      "password": "<script>alert('test')</script>",
+      "imya": "<script>alert('test')</script>",
+      "fmiliya": "<script>alert('test')</script>",
+      "telNumber": "<script>alert('test')</script>",
+      "id": 7
     }
   ],
   "rates": [
